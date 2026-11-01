@@ -1,0 +1,334 @@
+<title>NBA 2K7 2026–27 Roster Sheet</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a scorer's roster book. Setup notes up top, then one sheet per team in a wrapping grid. */
+:root {
+  --bg: #f3f5f8;
+  --paper: #ffffff;
+  --ink: #16202e;
+  --muted: #5b6676;
+  --line: #d8dee7;
+  --accent: #d9611c;
+  --accent-soft: #fbe9de;
+  --done: #2f7d4f;
+  --warn-bg: #fff4d6;
+  --warn-ink: #6b4e00;
+  --display: "Barlow Condensed", "Arial Narrow", "Helvetica Neue", sans-serif;
+  --body: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0f141c; --paper: #171e29; --ink: #e6ebf2; --muted: #96a1b2; --line: #2a3443;
+    --accent: #f08a4b; --accent-soft: #3a2518; --done: #5fc187; --warn-bg: #3a3014; --warn-ink: #f1d488;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0f141c; --paper: #171e29; --ink: #e6ebf2; --muted: #96a1b2; --line: #2a3443;
+  --accent: #f08a4b; --accent-soft: #3a2518; --done: #5fc187; --warn-bg: #3a3014; --warn-ink: #f1d488;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 15px; line-height: 1.55;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 32px 64px;
+}
+.wrap { max-width: 1240px; margin: 0 auto; display: flex; flex-direction: column; gap: 32px; }
+h1, h2, h3 { font-family: var(--display); text-wrap: balance; margin: 0; letter-spacing: .01em; }
+h1 { font-size: clamp(34px, 6vw, 56px); font-weight: 800; line-height: .95; text-transform: uppercase; }
+h1 span { color: var(--accent); }
+h2 { font-size: 26px; font-weight: 700; text-transform: uppercase; }
+h3 { font-size: 21px; font-weight: 700; }
+p { margin: 0; max-width: 68ch; }
+.eyebrow { font-family: var(--mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+header { display: flex; flex-direction: column; gap: 12px; }
+.lede { font-size: 17px; color: var(--muted); }
+.lede b { color: var(--ink); }
+
+.progress { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; }
+.bar { flex: 1 1 260px; height: 10px; background: var(--line); border-radius: 5px; overflow: hidden; }
+.bar i { display: block; height: 100%; width: 0; background: var(--accent); transition: width .2s; }
+.count { font-family: var(--mono); font-variant-numeric: tabular-nums; font-size: 14px; }
+
+.setup { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
+.setup > section { background: var(--paper); border: 1px solid var(--line); border-radius: 8px; padding: 20px 22px; display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+ol, ul { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 6px; }
+li { max-width: 68ch; }
+.warn { background: var(--warn-bg); color: var(--warn-ink); border-radius: 6px; padding: 12px 14px; font-size: 14px; }
+.map { width: 100%; border-collapse: collapse; font-size: 14px; }
+.map td { padding: 5px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+.map td:first-child { color: var(--muted); padding-right: 10px; }
+code { font-family: var(--mono); font-size: .9em; background: var(--accent-soft); padding: 1px 5px; border-radius: 4px; }
+
+.tools { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; position: sticky; top: env(safe-area-inset-top, 0px); background: var(--bg); padding-block: 10px; z-index: 5; border-bottom: 1px solid var(--line); }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--bg); }
+input[type="search"] { flex: 1 1 240px; font: inherit; padding: 8px 12px; border: 1px solid var(--line); border-radius: 6px; background: var(--paper); color: var(--ink); min-width: 0; }
+button { font: inherit; font-size: 14px; padding: 8px 14px; border-radius: 6px; border: 1px solid var(--line); background: var(--paper); color: var(--ink); cursor: pointer; }
+button:hover { border-color: var(--accent); }
+button[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #fff; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.teams { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 20px; }
+.team { background: var(--paper); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; min-width: 0; }
+.team.complete { border-color: var(--done); }
+.team-head { padding: 14px 16px 10px; display: flex; flex-direction: column; gap: 2px; border-bottom: 2px solid var(--ink); }
+.team-head .row { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; }
+.slot { font-size: 13px; color: var(--muted); }
+.slot b { color: var(--accent); font-weight: 600; }
+.tcount { font-family: var(--mono); font-size: 13px; font-variant-numeric: tabular-nums; color: var(--muted); white-space: nowrap; }
+.team.complete .tcount { color: var(--done); font-weight: 500; }
+.scroll { overflow-x: auto; }
+table.roster { width: 100%; border-collapse: collapse; font-size: 14px; }
+.roster th { font-family: var(--mono); font-size: 11px; font-weight: 500; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); text-align: left; padding: 6px 8px; }
+.roster td { padding: 5px 8px; border-top: 1px solid var(--line); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.roster td.name { white-space: normal; width: 100%; }
+.roster td.num, .roster td.ht, .roster td.wt { font-family: var(--mono); font-size: 13px; }
+.roster td.ovr { font-family: var(--mono); font-size: 13px; font-weight: 500; color: var(--accent); text-align: right; }
+.roster th.ovr { text-align: right; }
+.roster tr.cut td { border-top: 2px dashed var(--accent); }
+.scale { width: 100%; border-collapse: collapse; font-size: 14px; }
+.scale td { padding: 4px 0; border-bottom: 1px solid var(--line); }
+.scale td:first-child { font-family: var(--mono); font-variant-numeric: tabular-nums; color: var(--accent); width: 72px; }
+.roster tr.done td { color: var(--muted); }
+.roster tr.done td.name { text-decoration: line-through; }
+.roster label { display: flex; align-items: center; gap: 8px; cursor: pointer; }
+.roster input { accent-color: var(--done); width: 16px; height: 16px; flex: none; }
+.tag { font-family: var(--mono); font-size: 10px; letter-spacing: .05em; padding: 1px 5px; border-radius: 3px; background: var(--line); color: var(--muted); margin-left: 6px; }
+.tag.keep { background: var(--accent); color: #fff; }
+.coach { padding: 8px 16px 12px; font-size: 13px; color: var(--muted); border-top: 1px solid var(--line); }
+.empty { color: var(--muted); padding: 24px 0; }
+footer { font-size: 13px; color: var(--muted); display: flex; flex-direction: column; gap: 6px; }
+a { color: var(--accent); }
+@media (prefers-reduced-motion: reduce) { .bar i { transition: none; } }
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">NBA 2K7 · PS2 · SLUS-21424 · rosters as of Oct 31, 2026</div>
+    <h1>2026–27 Roster <span>Sheet</span></h1>
+    <p class="lede">Every current NBA roster, laid out for entering into NBA 2K7's in-game editor. Of the players on the 2K7 disc, <b>only LeBron James is still in the league</b>, so nearly every player below has to be made in Create Player. Each player has a suggested overall rating, and teams are sorted best to worst. Check players off as you finish them. Your checkmarks are saved in this browser only.</p>
+    <div class="progress">
+      <div class="bar" aria-hidden="true"><i id="barFill"></i></div>
+      <div class="count" id="totalCount">0 / 0 players entered</div>
+    </div>
+  </header>
+
+  <div class="setup">
+    <section>
+      <h2>Before you start</h2>
+      <ol>
+        <li>Run the ISO in <b>PCSX2</b>. Create a fresh memory card for this project.</li>
+        <li>Start the game, then save the untouched default roster to the card once, so you have something to go back to.</li>
+        <li>Close PCSX2 and copy the memory card file somewhere safe (in PCSX2's <code>memcards</code> folder, usually <code>Mcd001.ps2</code>).</li>
+        <li><b>Test on one team first</b> (see the box to the right). Only then do the whole league.</li>
+        <li>For each team: release the old players to free agency, sign LeBron to Philadelphia, create the new players, and assign them.</li>
+        <li>Save the roster after every team. Back up the memory card file every few teams.</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Test these first</h2>
+      <p>I can't confirm these limits from the disc. Check them in game before you commit hours:</p>
+      <ul>
+        <li><b>Create Player cap.</b> The league needs about 500 new players. If 2K7 caps created players lower than that, enter the top 13 per team first (marked rows are two-way contracts and can be skipped).</li>
+        <li><b>Roster size.</b> 2K7 probably allows 15 per team and may require a minimum of 12 or 13. Some teams below list 16–19, so drop the two-way and least-used players first.</li>
+        <li><b>Release limits.</b> Check whether the game lets a team go below the minimum while you swap players. If not, create a team's new players first, then release the old ones.</li>
+      </ul>
+      <div class="warn">Never edit the ISO itself for this. All changes live on the memory card, so a mistake costs you a roster save, not the game.</div>
+    </section>
+
+    <section>
+      <h2>Team slots that changed</h2>
+      <p>2K7 has the 2006–07 franchises. Use these slots:</p>
+      <table class="map">
+        <tr><td>Brooklyn Nets</td><td>New Jersey Nets</td></tr>
+        <tr><td>Charlotte Hornets</td><td>Charlotte Bobcats</td></tr>
+        <tr><td>New Orleans Pelicans</td><td>New Orleans/Oklahoma City Hornets</td></tr>
+        <tr><td>Oklahoma City Thunder</td><td>Seattle SuperSonics</td></tr>
+      </table>
+      <p class="slot">Team names and logos can't be changed in 2K7 as far as I know, so those four keep their old look.</p>
+    </section>
+
+    <section>
+      <h2>Ratings</h2>
+      <p>The OVR column is a suggested overall on a 2K-style scale:</p>
+      <table class="scale">
+        <tr><td>95–98</td><td>MVP level</td></tr>
+        <tr><td>88–94</td><td>All-NBA</td></tr>
+        <tr><td>83–87</td><td>All-Star</td></tr>
+        <tr><td>77–82</td><td>Good starter</td></tr>
+        <tr><td>70–76</td><td>Rotation player</td></tr>
+        <tr><td>62–69</td><td>End of bench, two-way</td></tr>
+      </table>
+      <p>In Create Player you set individual attributes, and the game works out the overall. Raise the attributes that fit the position until you land near the target: ball handling, passing and speed for point guards; shooting and perimeter defense for wings; inside scoring, rebounding, blocks and strength for bigs.</p>
+      <p>The <b>dashed line</b> on each team marks its top 13. If you run out of Create Player slots, stop at the line.</p>
+      <div class="warn">These ratings are my own estimates, based on how each player performed through 2025–26 and on draft position for rookies. Adjust anyone you think is off.</div>
+    </section>
+  </div>
+
+  <div class="tools">
+    <input type="search" id="q" placeholder="Find a player or team" aria-label="Find a player or team">
+    <button type="button" id="hideDone" aria-pressed="false">Hide finished teams</button>
+  </div>
+
+  <div class="teams" id="teams"></div>
+  <p class="empty" id="empty" hidden>No player or team matches that search.</p>
+
+  <footer>
+    <p>Source: Basketball-Reference 2026–27 team roster pages, pulled Oct 31, 2026. Rosters change with every trade and signing, so check a team's page again before you enter it.</p>
+    <p>Positions shown as G, F or F-G on the source are mapped to the closest 2K7 position. A few teams show two players with the same jersey number; that is how the source lists them.</p>
+  </footer>
+</div>
+
+<script>
+// Suggested overall ratings (estimates), keyed by player name
+const OVR = {
+"Nickeil Alexander-Walker":80,"Jalen Johnson":87,"Aaron Wiggins":75,"CJ McCollum":79,"Onyeka Okongwu":80,"Dyson Daniels":83,"Luguentz Dort":77,"Jock Landale":72,"Kingston Flemings":75,"Corey Kispert":74,"Asa Newell":72,"Dorian Finney-Smith":73,"Zuby Ejiofor":70,"RayJ Dennis":66,"Keshon Gilbert":65,"Jalen Wilson":67,"Henri Veesaar":67,"Mouhamed Gueye":68,
+"Jayson Tatum":91,"Paul George":79,"Payton Pritchard":81,"Derrick White":84,"Sam Hauser":74,"Neemias Queta":76,"Jordan Walsh":72,"Mitchell Robinson":76,"Luka Garza":70,"Baylor Scheierman":70,"Hugo González":71,"Mike Conley":70,"Chris Cenac Jr.":72,"Ron Harper Jr.":66,"Amari Williams":65,"Dillon Mitchell":66,"Devin Carter":67,
+"Michael Porter Jr.":82,"Julius Randle":81,"Moritz Wagner":73,"Nolan Traoré":73,"Egor Dëmin":75,"Day'Ron Sharpe":74,"Chaney Johnson":66,"Noah Clowney":74,"Keon Ellis":75,"Mikel Brown Jr.":75,"Josh Minott":70,"Danny Wolf":72,"Ben Saraf":71,"Drake Powell":72,"Joshua Jefferson":68,"Tyler Bilodeau":66,"Grant Nelson":66,"Terance Mann":72,
+"Brandon Miller":84,"Naz Reid":81,"Grayson Allen":76,"Dennis Schröder":76,"Moussa Diabaté":74,"Royce O'Neale":75,"Ryan Kalkbrenner":72,"Sion James":71,"Christian Anderson Jr.":72,"Tidjane Salaün":70,"Liam McNeeley":72,"Hannes Steinbach":70,"PJ Hall":67,"Kylan Boswell":65,"Michael Ajayi":66,"Coby White":81,"Kon Knueppel":84,"Grant Williams":72,
+"Norman Powell":81,"Caleb Wilson":79,"Matas Buzelis":80,"Jalen Smith":74,"Tre Jones":76,"Leonard Miller":70,"Josh Giddey":82,"Buddy Hield":74,"Isaac Okoro":74,"Noa Essengue":70,"Zach Collins":72,"Tobe Awaka":67,"Jaylin Sellers":66,"Jordan Hawkins":71,"Dailyn Swain":69,"Nic Claxton":77,"Patrick Williams":73,
+"Donovan Mitchell":89,"Evan Mobley":88,"James Harden":84,"Jarrett Allen":82,"Peyton Watson":78,"Sam Merrill":74,"Jaylon Tyson":76,"Mario Hezonja":72,"Tyrese Proctor":71,"Craig Porter Jr.":69,"Meleek Thomas":69,"Khalifa Diop":65,"Thomas Bryant":69,"Nae'Qwan Tomlin":68,"Tristan Enaruna":64,"Riley Minix":63,"Ernest Udeh Jr.":63,
+"P.J. Washington":79,"Max Christie":77,"Zaccharie Risacher":76,"Marcus Sasser":70,"Morez Johnson Jr.":71,"Daniel Gafford":78,"Cooper Flagg":87,"Kyrie Irving":85,"Sergio de Larrea":68,"Walter Clayton":73,"Moussa Cissé":64,"Naji Marshall":77,"Tobi Lawal":66,"Jett Howard":69,"Caleb Martin":72,"Santi Aldama":77,"Tarik Biberovic":66,"Dereck Lively II":79,
+"Jamal Murray":87,"Nikola Jokić":98,"DeMar DeRozan":79,"Aaron Gordon":82,"Christian Braun":80,"Trevon Brazile":68,"Marvin Bagley III":72,"Bryce Hopkins":66,"Tyus Jones":74,"Ryan Nembhard":70,"Cam Whitmore":73,"DaRon Holmes":70,"Cameron Johnson":79,"Zeke Nnaji":70,"Alpha Diallo":65,"Spencer Jones":70,"Julian Strawther":72,
+"Cade Cunningham":92,"Duncan Robinson":75,"Paul Reed":73,"Daniss Jenkins":70,"John Collins":78,"Javonte Green":70,"Kevin Huerter":74,"Ron Holland":74,"Ausar Thompson":81,"Tolu Smith":64,"Isaiah Joe":75,"Jalen Duren":84,"Taurean Prince":72,"Ebuka Okorie":68,"Chaz Lanier":67,"Elijah Harkless":63,"Isaac Jones":63,"Ugonna Onyenso":63,
+"Stephen Curry":90,"Jimmy Butler":82,"Draymond Green":79,"Al Horford":74,"Kristaps Porziņģis":80,"Brandin Podziemski":79,"Moses Moody":76,"Yaxel Lendeborg":73,"Brandon Williams":72,"De'Anthony Melton":74,"Georges Niang":71,"Gary Payton II":71,"Will Richard":71,"Gui Santos":72,"Graham Ike":66,"LJ Cryer":65,"Charles Bassey":67,"Malevy Leons":64,
+"Kevin Durant":89,"Amen Thompson":86,"Jabari Smith Jr.":81,"Tari Eason":78,"Bogdan Bogdanović":73,"Alperen Şengün":87,"Fred VanVleet":79,"Reed Sheppard":77,"Clint Capela":73,"Isaiah Crawford":66,"Bruce Thornton":67,"Jae'Sean Tate":70,"Marcus Smart":74,"Oscar Tshiebwe":66,"Steven Adams":75,"Quadir Copeland":65,"Julian Phillips":69,
+"Tyrese Haliburton":88,"Pascal Siakam":86,"Ivica Zubac":82,"Andrew Nembhard":79,"Aaron Nesmith":77,"Obi Toppin":75,"Kelly Oubre Jr.":75,"Jarace Walker":76,"Quenton Jackson":70,"Larry Nance Jr.":71,"Jay Huff":73,"Jalen Slawson":67,"Braden Smith":68,"Kobe Brown":67,"Ben Sheppard":70,"T.J. McConnell":76,"Johnny Furphy":68,
+"Darius Garland":83,"Keaton Wagler":73,"Brook Lopez":74,"Derrick Jones Jr.":75,"Kris Dunn":74,"Isaiah Jackson":72,"Gradey Dick":74,"Kobe Sanders":70,"Rui Hachimura":77,"Baba Miller":66,"Jalen Pickett":67,"Nick Martinelli":65,"Cam Christie":69,"Yanic Konan Niederhäuser":67,"Nicolas Batum":70,"Brandon Ingram":83,"Max Strus":75,"Jordan Miller":68,"Bradley Beal":76,
+"Luka Dončić":96,"Austin Reaves":85,"Walker Kessler":80,"Sandro Mamukelashvili":72,"Quentin Grimes":77,"Matisse Thybulle":72,"Collin Sexton":76,"Ziaire Williams":73,"Jake LaRavia":74,"Kevon Looney":71,"Jaden Hardy":70,"Bronny James":66,"Jarred Vanderbilt":71,"Cameron Carr":66,"Nick Smith Jr.":68,"Adou Thiero":66,"Chris Mañon":63,"Arthur Kaluma":63,"Lawson Lovering":63,
+"Ty Jerome":77,"Cameron Boozer":79,"Jaylen Wells":76,"Cam Spencer":74,"Jerami Grant":76,"Quinten Post":73,"Scotty Pippen Jr.":74,"GG Jackson II":73,"Cedric Coward":77,"Isaiah Stewart":76,"Zach Edey":78,"Taylor Hendricks":70,"Kris Murray":69,"Olivier-Maxence Prosper":69,"Karim López":70,"Carson Cooper":64,"Javon Small":68,"Jahmai Mashack":65,
+"Giannis Antetokounmpo":95,"Bam Adebayo":86,"Davion Mitchell":77,"Pelle Larsson":73,"Andrew Wiggins":79,"Bobby Portis":76,"Klay Thompson":75,"Tim Hardaway Jr.":74,"Nikola Jović":76,"Dru Smith":69,"Ryan Conwell":66,"Nick Richards":72,"Myron Gardner":66,"Simone Fontecchio":71,"Tre Donaldson":64,"Vladislav Goldin":65,"Jahmir Young":64,"Keshad Johnson":66,
+"Tyler Herro":85,"Jaime Jaquez Jr.":77,"Kel'el Ware":79,"Myles Turner":81,"Kyle Kuzma":75,"Ryan Rollins":77,"Kasparas Jakučionis":71,"A.J. Green":72,"Brayden Burries":72,"Ousmane Dieng":68,"Nate Ament":73,"Jericho Sims":69,"Gary Trent Jr.":74,"Bogoljub Markovic":66,"Caris LeVert":72,"Kam Jones":68,"Cormac Ryan":64,"Pete Nance":64,
+"Anthony Edwards":92,"LaMelo Ball":85,"Rudy Gobert":82,"Jaden McDaniels":80,"Jonathan Kuminga":79,"Ayo Dosunmu":77,"Terrence Shannon Jr.":72,"Joan Beringer":70,"Trey Lyles":71,"Bones Hyland":71,"Jaylen Clark":70,"Cody Williams":69,"Isaiah Evans":68,"Donte DiVincenzo":77,"Zyon Pullin":63,"Enrique Freeman":64,"Rocco Zikarsky":63,
+"Zion Williamson":84,"Trey Murphy III":83,"Herbert Jones":79,"Dejounte Murray":79,"Jordan Poole":77,"Saddiq Bey":75,"Derik Queen":77,"Jeremiah Fears":76,"Bennedict Mathurin":78,"Karlo Matković":69,"Yves Missi":72,"DeAndre Jordan":66,"Bryce McGowens":67,"Trendon Watford":70,"Julian Reese":64,"Jaron Pierre Jr.":64,"Malik Dia":64,"AJ Johnson":66,
+"Spiderman":99,"Jalen Brunson":90,"Karl-Anthony Towns":88,"OG Anunoby":84,"Mikal Bridges":82,"Josh Hart":80,"Miles McBride":76,"Jordan Clarkson":74,"Landry Shamet":72,"Andre Drummond":72,"Tyler Kolek":69,"James Wiseman":68,"Jose Alvarado":73,"Jaden Akins":64,"Pacôme Dadiet":68,"Mohamed Diawara":67,"Tyler Nickel":64,"Dalton Knecht":70,
+"Shai Gilgeous-Alexander":97,"Jalen Williams":88,"Chet Holmgren":87,"Isaiah Hartenstein":81,"Alex Caruso":77,"Cason Wallace":78,"Ajay Mitchell":79,"Jared McCain":76,"Jaylin Williams":73,"Kenrich Williams":70,"Aday Mara":72,"Bennett Stirtz":70,"Thomas Sorber":69,"Nikola Topić":70,"Brooks Barnhizer":64,"Josh Dix":64,"Micah Peavy":65,
+"Paolo Banchero":88,"Franz Wagner":86,"Desmond Bane":83,"Jalen Suggs":80,"Wendell Carter Jr.":78,"Nikola Vučević":76,"Anthony Black":77,"Tristan Da Silva":74,"Goga Bitadze":73,"Jase Richardson":71,"Jamal Cain":68,"Jevon Carter":71,"Colin Castleton":65,"Alex Morales":63,"Jonathan Isaac":74,"Izaiyah Nelson":64,"Noah Penda":69,
+"Tyrese Maxey":89,"Joel Embiid":86,"Jaylen Brown":88,"LeBron James":85,"VJ Edgecombe":82,"Anfernee Simons":79,"Kentavious Caldwell-Pope":74,"Adem Bona":72,"Dean Wade":71,"Jabari Walker":72,"Labaron Philon Jr.":72,"Caleb Love":68,"Justin Edwards":69,"Rayan Rupert":68,"Dominick Barlow":70,"Tacko Fall":62,"Ariel Hukporti":65,
+"Devin Booker":89,"Jalen Green":81,"Dillon Brooks":78,"Miles Bridges":78,"Mark Williams":79,"Khaman Maluach":73,"Jordan Goodwin":73,"Collin Gillespie":74,"Ryan Dunn":73,"Luke Kennard":73,"Jamaree Bouyea":67,"Koa Peat":72,"Rasheer Fleming":69,"Oso Ighodaro":70,"Duop Reath":66,"Pat Spencer":65,"Drew Timme":64,
+"Damian Lillard":82,"Ja Morant":81,"Deni Avdija":84,"Jrue Holiday":78,"Donovan Clingan":79,"Shaedon Sharpe":79,"Toumani Camara":79,"Scoot Henderson":76,"Sidy Cissoko":69,"Vít Krejčí":72,"Robert Williams":71,"Yang Hansen":70,"Micah Potter":66,"John Tonje":66,"Branden Carlson":65,"Jayson Kent":63,"Chris Youngblood":64,
+"Zach LaVine":81,"Domantas Sabonis":84,"Keegan Murray":79,"De'Andre Hunter":76,"Malik Monk":77,"Darius Acuff Jr.":76,"Precious Achiuwa":71,"Emanuel Sharp":66,"Daeqwon Plowden":66,"Nique Clifford":71,"Jonathan Mogbo":68,"Alex Karaban":68,"Leaky Black":66,"Maxime Raynaud":71,"Killian Hayes":66,"Ben Simmons":68,"Sean Pedulla":63,
+"Victor Wembanyama":96,"De'Aaron Fox":85,"Stephon Castle":84,"Dylan Harper":81,"Devin Vassell":79,"Julian Champagnie":76,"Keldon Johnson":77,"Harrison Barnes":74,"Luke Kornet":74,"Carter Bryant":73,"Tarris Reed Jr.":68,"Ja'Kobi Gillespie":67,"Jordan McLaughlin":66,"David Jones García":65,"Maliq Brown":65,"Jayden Quaintance":70,"Tobias Harris":74,
+"Kawhi Leonard":86,"Scottie Barnes":87,"RJ Barrett":81,"Immanuel Quickley":80,"Jakob Poeltl":80,"Ja'Kobe Walter":74,"Collin Murray-Boyles":77,"Jamal Shead":73,"Jamison Battle":70,"Allen Graves":67,"Trayce Jackson-Davis":73,"Alijah Martin":67,"Jaden Bradley":66,"Kyle Anderson":69,"Malachi Smith":63,"Nate Bittle":63,
+"Lauri Markkanen":85,"Jaren Jackson Jr.":86,"Keyonte George":81,"Ace Bailey":79,"Darryn Peterson":80,"Brice Sensabaugh":74,"Isaiah Collier":73,"Svi Mykhailiuk":71,"Jaxson Hayes":72,"Josh Okogie":70,"Josh Green":70,"Kyle Filipowski":74,"Mo Bamba":67,"Tony Bradley":67,"Jusuf Nurkić":72,"Trey Alexander":64,"Harrison Ingram":66,"Kobe Bufkin":67,
+"Trae Young":85,"Anthony Davis":87,"AJ Dybantsa":80,"Alex Sarr":79,"Kyshawn George":76,"Bilal Coulibaly":77,"Bub Carrington":74,"Deandre Ayton":78,"Tre Johnson":75,"Khris Middleton":72,"Justin Champagnie":72,"Will Riley":71,"Anthony Gill":66,"Tre Mann":70,"Tristan Vukcevic":67,"Felix Okpara":63,"Reece Beekman":64,"Jamir Watkins":64
+};
+
+// "num|name|pos|ht|wt|flag" — flag: tw = two-way contract, keep = already in 2K7
+const TEAMS = [
+  ["Atlanta Hawks","Atlanta Hawks","Quin Snyder",["7|Nickeil Alexander-Walker|SG|6-5|205","1|Jalen Johnson|SF|6-8|219","2|Aaron Wiggins|SG|6-5|190","3|CJ McCollum|PG|6-3|190","17|Onyeka Okongwu|C|6-10|240","5|Dyson Daniels|SG|6-7|199","0|Luguentz Dort|SF|6-4|220","31|Jock Landale|C|6-11|255","4|Kingston Flemings|PG|6-4|190","24|Corey Kispert|SF|6-6|224","14|Asa Newell|PF|6-10|220","8|Dorian Finney-Smith|PF|6-7|220","20|Zuby Ejiofor|PF|6-9|240","|RayJ Dennis|PG|6-1|180","|Keshon Gilbert|SG|6-4|200","|Jalen Wilson|PF|6-6|220","|Henri Veesaar|C|7-0|227","|Mouhamed Gueye|PF|6-11|210"]],
+  ["Boston Celtics","Boston Celtics","Joe Mazzulla",["0|Jayson Tatum|PF|6-8|210","13|Paul George|PF|6-8|230","11|Payton Pritchard|PG|6-1|195","9|Derrick White|SG|6-4|190","30|Sam Hauser|PF|6-7|217","88|Neemias Queta|C|7-0|248","27|Jordan Walsh|PF|6-6|205","4|Mitchell Robinson|C|7-0|240","52|Luka Garza|C|6-10|243","55|Baylor Scheierman|SG|6-6|205","28|Hugo González|SG|6-6|200","45|Mike Conley|PG|6-1|175","12|Chris Cenac Jr.|PF|6-11|240","8|Ron Harper Jr.|SF|6-5|233","|Amari Williams|PF|6-11|250|tw","|Dillon Mitchell|SF|6-8|205|tw","|Devin Carter|PG|6-2|195|tw"]],
+  ["Brooklyn Nets","New Jersey Nets","Jordi Fernández",["17|Michael Porter Jr.|SF|6-10|218","30|Julius Randle|PF|6-9|250","13|Moritz Wagner|C|6-11|245","10|Nolan Traoré|PG|6-3|185","8|Egor Dëmin|PG|6-8|200","20|Day'Ron Sharpe|C|6-10|265","31|Chaney Johnson|SF|6-7|220","21|Noah Clowney|PF|6-10|210","1|Keon Ellis|SG|6-4|175","0|Mikel Brown Jr.|PG|6-5|190","00|Josh Minott|SF|6-8|205","2|Danny Wolf|PF|6-11|250","77|Ben Saraf|SG|6-6|200","4|Drake Powell|SG|6-5|195","9|Joshua Jefferson|PF|6-9|240","|Tyler Bilodeau|PF|6-9|230","|Grant Nelson|SF|7-0|215","|Terance Mann|SG|6-6|215"]],
+  ["Charlotte Hornets","Charlotte Bobcats","Charles Lee",["24|Brandon Miller|SF|6-7|200","0|Naz Reid|C|6-9|264","8|Grayson Allen|SG|6-3|198","17|Dennis Schröder|PG|6-1|175","14|Moussa Diabaté|C|6-10|210","00|Royce O'Neale|SF|6-6|226","11|Ryan Kalkbrenner|C|7-1|256","4|Sion James|SG|6-5|220","5|Christian Anderson Jr.|PG|6-0|165","31|Tidjane Salaün|PF|6-10|207","33|Liam McNeeley|SF|6-7|210","22|Hannes Steinbach|PF|6-11|248","16|PJ Hall|C|6-8|245","|Kylan Boswell|PG|6-2|226","|Michael Ajayi|SF|6-7|235","|Coby White|SG|6-4|210","|Kon Knueppel|SF|6-6|215","|Grant Williams|PF|6-7|236"]],
+  ["Chicago Bulls","Chicago Bulls","Tiago Splitter",["24|Norman Powell|SG|6-3|215","8|Caleb Wilson|PF|6-10|215","14|Matas Buzelis|SF|6-8|196","25|Jalen Smith|C|6-8|244","30|Tre Jones|PG|6-1|190","11|Leonard Miller|SF|6-10|220","3|Josh Giddey|PG|6-7|214","7|Buddy Hield|SG|6-4|220","35|Isaac Okoro|SG|6-4|225","2|Noa Essengue|PF|6-8|194","12|Zach Collins|PF|6-9|240","19|Tobe Awaka|PF|6-8|250","22|Jaylin Sellers|PG|6-5|205","15|Jordan Hawkins|SG|6-5|190","5|Dailyn Swain|SG|6-7|220","|Nic Claxton|C|6-11|215","|Patrick Williams|PF|6-6|235"]],
+  ["Cleveland Cavaliers","Cleveland Cavaliers","Kenny Atkinson",["45|Donovan Mitchell|SG|6-2|215","4|Evan Mobley|PF|6-11|215","1|James Harden|PG|6-5|220","31|Jarrett Allen|C|6-9|243","8|Peyton Watson|SF|6-8|200","5|Sam Merrill|SG|6-4|205","20|Jaylon Tyson|SG|6-6|215","33|Mario Hezonja|PF|6-8|220","24|Tyrese Proctor|PG|6-4|185","9|Craig Porter Jr.|PG|6-1|180","15|Meleek Thomas|SG|6-5|185","|Khalifa Diop|C|6-11|231","|Thomas Bryant|C|6-9|248","|Nae'Qwan Tomlin|PF|6-8|210","|Tristan Enaruna|SF|6-7|220|tw","|Riley Minix|SF|6-7|230|tw","|Ernest Udeh Jr.|C|6-11|266|tw"]],
+  ["Dallas Mavericks","Dallas Mavericks","Dusty May",["25|P.J. Washington|PF|6-7|230","0|Max Christie|SG|6-5|190","10|Zaccharie Risacher|SF|6-8|200","8|Marcus Sasser|PG|6-1|195","14|Morez Johnson Jr.|PF|6-9|250","21|Daniel Gafford|C|6-10|265","32|Cooper Flagg|SF|6-9|205","11|Kyrie Irving|SG|6-2|195","55|Sergio de Larrea|PG|6-5|175","1|Walter Clayton|PG|6-4|195","30|Moussa Cissé|C|6-11|220","3|Naji Marshall|SF|6-6|220","33|Tobi Lawal|PF|6-8|215","9|Jett Howard|SF|6-8|215","16|Caleb Martin|SF|6-5|205","|Santi Aldama|PF|7-0|215","|Tarik Biberovic|SF|6-7|218","|Dereck Lively II|C|7-1|230"]],
+  ["Denver Nuggets","Denver Nuggets","David Adelman",["27|Jamal Murray|PG|6-4|215","15|Nikola Jokić|C|6-11|284","10|DeMar DeRozan|SF|6-6|220","32|Aaron Gordon|PF|6-8|235","0|Christian Braun|SG|6-6|220","7|Trevon Brazile|PF|6-10|220","3|Marvin Bagley III|PF|6-10|235","13|Bryce Hopkins|SF|6-7|225","5|Tyus Jones|PG|6-0|196","9|Ryan Nembhard|PG|5-11|180","00|Cam Whitmore|SF|6-6|230","14|DaRon Holmes|PF|6-9|225","23|Cameron Johnson|PF|6-8|210","22|Zeke Nnaji|PF|6-10|240","11|Alpha Diallo|SF|6-7|210","|Spencer Jones|SF|6-7|225","|Julian Strawther|SG|6-6|205"]],
+  ["Detroit Pistons","Detroit Pistons","J.B. Bickerstaff",["2|Cade Cunningham|PG|6-6|220","55|Duncan Robinson|SF|6-7|215","7|Paul Reed|C|6-9|210","24|Daniss Jenkins|PG|6-4|165","20|John Collins|PF|6-9|226","31|Javonte Green|SG|6-5|205","27|Kevin Huerter|SG|6-6|190","5|Ron Holland|SF|6-8|206","9|Ausar Thompson|SF|6-7|205","35|Tolu Smith|PF|6-11|254","17|Isaiah Joe|SG|6-4|165","0|Jalen Duren|C|6-10|250","12|Taurean Prince|SF|6-6|218","23|Ebuka Okorie|PG|6-2|185","8|Chaz Lanier|SG|6-3|206","94|Elijah Harkless|SG|6-3|195|tw","13|Isaac Jones|PF|6-8|245|tw","|Ugonna Onyenso|C|6-11|237|tw"]],
+  ["Golden State Warriors","Golden State Warriors","Steve Kerr",["30|Stephen Curry|PG|6-2|200","10|Jimmy Butler|SF|6-6|230","23|Draymond Green|PF|6-6|235","20|Al Horford|C|6-8|258","|Kristaps Porziņģis|C|7-2|240","2|Brandin Podziemski|SG|6-4|205","|Moses Moody|SG|6-5|215","1|Yaxel Lendeborg|SF|6-9|241","12|Brandon Williams|PG|6-1|190","8|De'Anthony Melton|PG|6-2|201","32|Georges Niang|PF|6-6|230","0|Gary Payton II|SG|6-2|195","3|Will Richard|SG|6-3|210","15|Gui Santos|PF|6-7|218","45|Graham Ike|C|6-9|251","18|LJ Cryer|PG|6-0|202","28|Charles Bassey|C|6-10|230","33|Malevy Leons|SF|6-9|210"]],
+  ["Houston Rockets","Houston Rockets","Ime Udoka",["7|Kevin Durant|PF|6-11|240","1|Amen Thompson|SF|6-7|200","10|Jabari Smith Jr.|PF|6-11|220","17|Tari Eason|PF|6-8|215","31|Bogdan Bogdanović|SG|6-5|225","28|Alperen Şengün|C|6-11|243","5|Fred VanVleet|PG|6-0|197","15|Reed Sheppard|PG|6-2|185","30|Clint Capela|C|6-10|256","27|Isaiah Crawford|SF|6-6|220","2|Bruce Thornton|PG|6-2|215","8|Jae'Sean Tate|SF|6-4|230","36|Marcus Smart|PG|6-3|220","9|Oscar Tshiebwe|C|6-8|255","12|Steven Adams|C|6-11|265","|Quadir Copeland|PG|6-6|220","|Julian Phillips|SF|6-6|201"]],
+  ["Indiana Pacers","Indiana Pacers","Rick Carlisle",["0|Tyrese Haliburton|PG|6-5|185","43|Pascal Siakam|PF|6-8|245","40|Ivica Zubac|C|7-0|240","2|Andrew Nembhard|SG|6-4|191","23|Aaron Nesmith|SF|6-5|215","1|Obi Toppin|PF|6-9|220","10|Kelly Oubre Jr.|SF|6-8|210","5|Jarace Walker|PF|6-7|235","29|Quenton Jackson|PG|6-4|173","22|Larry Nance Jr.|PF|6-6|245","32|Jay Huff|C|7-1|240","18|Jalen Slawson|SF|6-7|215","3|Braden Smith|PG|6-0|170","24|Kobe Brown|PF|6-7|250","26|Ben Sheppard|SG|6-6|190","|T.J. McConnell|PG|6-1|190","|Johnny Furphy|SG|6-8|200"]],
+  ["LA Clippers","LA Clippers","Tyronn Lue",["10|Darius Garland|PG|6-1|192","1|Keaton Wagler|SG|6-6|175","11|Brook Lopez|C|7-1|282","5|Derrick Jones Jr.|SF|6-6|210","8|Kris Dunn|PG|6-3|205","23|Isaiah Jackson|C|6-8|205","9|Gradey Dick|SG|6-7|200","4|Kobe Sanders|SG|6-8|207","28|Rui Hachimura|PF|6-8|230","18|Baba Miller|SF|6-11|204","21|Jalen Pickett|SG|6-2|202","12|Nick Martinelli|SF|6-7|220","24|Cam Christie|SG|6-5|190","18|Yanic Konan Niederhäuser|C|6-11|242","|Nicolas Batum|SF|6-7|230","|Brandon Ingram|SF|6-8|190","|Max Strus|SF|6-5|215","|Jordan Miller|SF|6-5|194","|Bradley Beal|SG|6-4|207"]],
+  ["Los Angeles Lakers","Los Angeles Lakers","JJ Redick",["77|Luka Dončić|PG|6-8|230","15|Austin Reaves|SG|6-5|197","14|Walker Kessler|C|7-2|245","54|Sandro Mamukelashvili|PF|6-9|240","5|Quentin Grimes|SG|6-5|207","4|Matisse Thybulle|SG|6-5|202","10|Collin Sexton|SG|6-3|190","11|Ziaire Williams|SF|6-9|185","12|Jake LaRavia|PF|6-7|235","55|Kevon Looney|C|6-9|222","7|Jaden Hardy|SG|6-3|198","9|Bronny James|SG|6-2|210","2|Jarred Vanderbilt|PF|6-8|214","|Cameron Carr|SG|6-5|175","|Nick Smith Jr.|SG|6-2|185","|Adou Thiero|SF|6-7|220","30|Chris Mañon|SG|6-4|209|tw","|Arthur Kaluma|SF|6-7|225|tw","|Lawson Lovering|C|7-0|245|tw"]],
+  ["Memphis Grizzlies","Memphis Grizzlies","Tuomas Iisalo",["2|Ty Jerome|SG|6-5|195","27|Cameron Boozer|PF|6-10|250","0|Jaylen Wells|SG|6-7|206","24|Cam Spencer|SG|6-3|205","3|Jerami Grant|PF|6-7|213","41|Quinten Post|C|7-0|238","1|Scotty Pippen Jr.|PG|6-2|170","45|GG Jackson II|PF|6-9|210","23|Cedric Coward|SG|6-5|206","28|Isaiah Stewart|C|6-8|250","14|Zach Edey|C|7-3|305","22|Taylor Hendricks|PF|6-9|215","17|Kris Murray|SF|6-8|218","18|Olivier-Maxence Prosper|PF|6-7|230","35|Karim López|SF|6-8|210","|Carson Cooper|PF|6-11|235","|Javon Small|PG|6-1|190","|Jahmai Mashack|SG|6-4|203"]],
+  ["Miami Heat","Miami Heat","Erik Spoelstra",["7|Giannis Antetokounmpo|PF|6-11|250","13|Bam Adebayo|C|6-9|260","2|Davion Mitchell|PG|6-0|200","9|Pelle Larsson|SG|6-5|215","22|Andrew Wiggins|SF|6-6|210","95|Bobby Portis|PF|6-9|250","11|Klay Thompson|SF|6-5|200","10|Tim Hardaway Jr.|SG|6-5|205","5|Nikola Jović|PF|6-10|245","12|Dru Smith|SG|6-2|200","4|Ryan Conwell|SG|6-4|215","8|Nick Richards|C|6-11|255","15|Myron Gardner|SF|6-5|225","0|Simone Fontecchio|SF|6-7|200","|Tre Donaldson|PG|6-3|200","|Vladislav Goldin|C|7-0|255","|Jahmir Young|PG|6-0|185","|Keshad Johnson|SF|6-6|230"]],
+  ["Milwaukee Bucks","Milwaukee Bucks","Taylor Jenkins",["11|Tyler Herro|SG|6-5|195","24|Jaime Jaquez Jr.|SF|6-6|225","9|Kel'el Ware|C|7-0|230","3|Myles Turner|C|6-11|250","18|Kyle Kuzma|PF|6-8|221","13|Ryan Rollins|PG|6-3|180","25|Kasparas Jakučionis|SG|6-5|200","20|A.J. Green|SG|6-4|190","0|Brayden Burries|SG|6-4|205","21|Ousmane Dieng|C|6-9|185","15|Nate Ament|SF|6-10|207","00|Jericho Sims|C|6-10|250","5|Gary Trent Jr.|SG|6-5|204","23|Bogoljub Markovic|PF|6-11|210","|Caris LeVert|SG|6-7|205","|Kam Jones|SG|6-4|200","|Cormac Ryan|SG|6-5|205","|Pete Nance|PF|6-9|225"]],
+  ["Minnesota Timberwolves","Minnesota Timberwolves","Chris Finch",["5|Anthony Edwards|SG|6-4|225","1|LaMelo Ball|PG|6-7|180","27|Rudy Gobert|C|7-1|258","3|Jaden McDaniels|PF|6-9|185","24|Jonathan Kuminga|PF|6-7|225","13|Ayo Dosunmu|SG|6-4|201","4|Terrence Shannon Jr.|SG|6-6|215","19|Joan Beringer|PF|6-11|230","41|Trey Lyles|PF|6-9|234","8|Bones Hyland|PG|6-2|169","7|Jaylen Clark|SG|6-5|205","9|Cody Williams|SG|6-8|190","33|Isaiah Evans|SG|6-6|175","|Donte DiVincenzo|SG|6-4|203","15|Zyon Pullin|SG|6-4|206|tw","|Enrique Freeman|PF|6-9|220|tw","|Rocco Zikarsky|C|7-3|227|tw"]],
+  ["New Orleans Pelicans","New Orleans/Oklahoma City Hornets","Jamahl Mosley",["1|Zion Williamson|PF|6-6|284","25|Trey Murphy III|SF|6-8|206","2|Herbert Jones|SF|6-7|206","5|Dejounte Murray|PG|6-4|180","3|Jordan Poole|SG|6-4|194","41|Saddiq Bey|SF|6-8|215","22|Derik Queen|C|6-9|250","0|Jeremiah Fears|PG|6-3|190","24|Bennedict Mathurin|SF|6-5|210","17|Karlo Matković|PF|6-10|231","21|Yves Missi|C|6-11|235","6|DeAndre Jordan|C|6-11|265","11|Bryce McGowens|SG|6-6|190","9|Trendon Watford|PF|6-8|244","2|Julian Reese|SF|6-9|230","|Jaron Pierre Jr.|SG|6-5|210","|Malik Dia|PF|6-9|262","|AJ Johnson|SG|6-5|160"]],
+  ["New York Knicks","New York Knicks","Mike Brown",["99|Spiderman|PG|5-9|170","11|Jalen Brunson|PG|6-2|190","32|Karl-Anthony Towns|C|7-0|248","8|OG Anunoby|PF|6-7|240","25|Mikal Bridges|SF|6-6|209","3|Josh Hart|SG|6-5|215","2|Miles McBride|PG|6-2|195","00|Jordan Clarkson|SG|6-5|194","44|Landry Shamet|SG|6-5|190","0|Andre Drummond|C|6-11|279","13|Tyler Kolek|PG|6-2|195","35|James Wiseman|C|6-11|240","5|Jose Alvarado|PG|6-0|179","14|Jaden Akins|SG|6-4|195","4|Pacôme Dadiet|SG|6-9|210","51|Mohamed Diawara|SF|6-9|225","|Tyler Nickel|SF|6-7|220","|Dalton Knecht|SF|6-6|215"]],
+  ["Oklahoma City Thunder","Seattle SuperSonics","Mark Daigneault",["2|Shai Gilgeous-Alexander|PG|6-6|195","8|Jalen Williams|SG|6-5|211","7|Chet Holmgren|C|7-1|208","55|Isaiah Hartenstein|C|7-0|250","9|Alex Caruso|SG|6-5|186","22|Cason Wallace|SG|6-3|195","25|Ajay Mitchell|SG|6-4|190","3|Jared McCain|SG|6-3|195","6|Jaylin Williams|PF|6-9|240","34|Kenrich Williams|PF|6-7|210","15|Aday Mara|C|7-2|255","14|Bennett Stirtz|PG|6-4|180","|Thomas Sorber|C|6-9|250","|Nikola Topić|PG|6-6|200","23|Brooks Barnhizer|SG|6-5|230|tw","21|Josh Dix|SG|6-6|205|tw","16|Micah Peavy|SG|6-7|215|tw"]],
+  ["Orlando Magic","Orlando Magic","Sean Sweeney",["5|Paolo Banchero|PF|6-10|250","22|Franz Wagner|SF|6-10|220","3|Desmond Bane|SG|6-6|215","4|Jalen Suggs|PG|6-5|205","34|Wendell Carter Jr.|C|6-10|270","9|Nikola Vučević|C|6-9|265","0|Anthony Black|PG|6-7|200","23|Tristan Da Silva|SF|6-8|217","35|Goga Bitadze|C|6-11|250","11|Jase Richardson|SG|6-1|180","8|Jamal Cain|SF|6-7|191","2|Jevon Carter|PG|6-0|190","14|Colin Castleton|C|6-10|250","30|Alex Morales|PG|6-6|195","|Jonathan Isaac|PF|6-10|230","|Izaiyah Nelson|PF|6-10|218","|Noah Penda|SF|6-7|215"]],
+  ["Philadelphia 76ers","Philadelphia 76ers","Nick Nurse",["0|Tyrese Maxey|PG|6-2|200","21|Joel Embiid|C|7-0|270","7|Jaylen Brown|SF|6-6|223","23|LeBron James|SF|6-9|250|keep","77|VJ Edgecombe|SG|6-4|190","5|Anfernee Simons|SG|6-3|200","1|Kentavious Caldwell-Pope|SG|6-5|204","30|Adem Bona|C|6-10|235","45|Dean Wade|PF|6-9|228","33|Jabari Walker|SF|6-7|237","00|Labaron Philon Jr.|PG|6-4|177","8|Caleb Love|SG|6-3|212","11|Justin Edwards|SF|6-7|217","2|Rayan Rupert|SG|6-7|205","3|Dominick Barlow|SF|6-9|224","4|Tacko Fall|C|7-6|311","|Ariel Hukporti|C|7-0|246"]],
+  ["Phoenix Suns","Phoenix Suns","Jordan Ott",["15|Devin Booker|SG|6-5|206","4|Jalen Green|SG|6-4|186","3|Dillon Brooks|SF|6-7|225","22|Miles Bridges|SF|6-7|225","|Mark Williams|C|7-1|240","10|Khaman Maluach|C|7-1|250","23|Jordan Goodwin|PG|6-3|215","12|Collin Gillespie|PG|6-1|195","0|Ryan Dunn|SF|6-7|216","8|Luke Kennard|SG|6-5|206","17|Jamaree Bouyea|PG|6-2|180","18|Koa Peat|PF|6-8|235","20|Rasheer Fleming|PF|6-9|240","11|Oso Ighodaro|PF|6-11|235","26|Duop Reath|C|6-9|245|tw","61|Pat Spencer|PG|6-2|205|tw","|Drew Timme|PF|6-9|235|tw"]],
+  ["Portland Trail Blazers","Portland Trail Blazers","Micah Nori",["0|Damian Lillard|PG|6-2|200","1|Ja Morant|PG|6-2|174","8|Deni Avdija|SF|6-8|228","5|Jrue Holiday|PG|6-4|220","23|Donovan Clingan|C|7-2|280","|Shaedon Sharpe|SG|6-5|210","33|Toumani Camara|PF|6-7|230","00|Scoot Henderson|PG|6-3|207","91|Sidy Cissoko|SF|6-6|220","27|Vít Krejčí|PG|6-8|195","35|Robert Williams|C|6-9|249","16|Yang Hansen|C|7-1|270","9|Micah Potter|C|6-9|248","2|John Tonje|SG|6-4|218","10|Branden Carlson|C|7-0|220","29|Jayson Kent|SF|6-8|215","|Chris Youngblood|SG|6-4|221"]],
+  ["Sacramento Kings","Sacramento Kings","Doug Christie",["8|Zach LaVine|SG|6-5|200","11|Domantas Sabonis|C|6-10|240","13|Keegan Murray|PF|6-8|225","15|De'Andre Hunter|SF|6-7|221","0|Malik Monk|SG|6-3|200","5|Darius Acuff Jr.|PG|6-2|190","9|Precious Achiuwa|C|6-8|243","34|Emanuel Sharp|SG|6-3|212","29|Daeqwon Plowden|SG|6-4|216","10|Nique Clifford|SG|6-5|210","22|Jonathan Mogbo|PF|6-9|225","33|Alex Karaban|SF|6-8|220","19|Leaky Black|SF|6-6|209","6|Maxime Raynaud|C|7-1|268","|Killian Hayes|PG|6-4|195","|Ben Simmons|PG|6-10|245","|Sean Pedulla|PG|6-1|195"]],
+  ["San Antonio Spurs","San Antonio Spurs","Mitch Johnson",["1|Victor Wembanyama|C|7-4|235","4|De'Aaron Fox|PG|6-3|185","5|Stephon Castle|PG|6-6|215","2|Dylan Harper|SG|6-5|215","24|Devin Vassell|SG|6-5|200","30|Julian Champagnie|SF|6-7|217","3|Keldon Johnson|SF|6-6|220","40|Harrison Barnes|PF|6-7|225","7|Luke Kornet|C|7-1|250","11|Carter Bryant|PF|6-6|220","10|Tarris Reed Jr.|C|6-11|265","17|Ja'Kobi Gillespie|PG|6-1|186","0|Jordan McLaughlin|PG|5-11|185","25|David Jones García|SF|6-4|210","15|Maliq Brown|PF|6-9|225","|Jayden Quaintance|PF|6-10|255","|Tobias Harris|PF|6-8|226"]],
+  ["Toronto Raptors","Toronto Raptors","Darko Rajaković",["2|Kawhi Leonard|SF|6-6|225","4|Scottie Barnes|PF|6-8|237","9|RJ Barrett|SF|6-6|214","5|Immanuel Quickley|PG|6-2|190","19|Jakob Poeltl|C|7-0|253","14|Ja'Kobe Walter|SG|6-4|180","30|Collin Murray-Boyles|PF|6-7|245","1|Jamal Shead|PG|6-1|200","77|Jamison Battle|SF|6-7|220","22|Allen Graves|PF|6-9|225","32|Trayce Jackson-Davis|C|6-9|245","55|Alijah Martin|SG|6-2|210","8|Jaden Bradley|PG|6-3|200","13|Kyle Anderson|SF|6-8|230","|Malachi Smith|SG|6-4|205|tw","|Nate Bittle|C|7-0|254|tw"]],
+  ["Utah Jazz","Utah Jazz","Will Hardy",["23|Lauri Markkanen|PF|7-1|240","20|Jaren Jackson Jr.|C|6-10|242","3|Keyonte George|PG|6-4|185","19|Ace Bailey|SF|6-9|200","22|Darryn Peterson|SG|6-6|205","28|Brice Sensabaugh|SF|6-6|225","8|Isaiah Collier|PG|6-4|210","10|Svi Mykhailiuk|SF|6-7|205","11|Jaxson Hayes|C|7-0|220","21|Josh Okogie|SG|6-4|213","5|Josh Green|SG|6-6|200","2|Kyle Filipowski|C|6-11|250","44|Mo Bamba|C|7-0|231","13|Tony Bradley|C|6-10|248","|Jusuf Nurkić|C|6-11|290","|Trey Alexander|SG|6-5|185","|Harrison Ingram|SF|6-5|230","|Kobe Bufkin|SG|6-4|195"]],
+  ["Washington Wizards","Washington Wizards","Brian Keefe",["3|Trae Young|PG|6-2|164","23|Anthony Davis|PF|6-10|253","4|AJ Dybantsa|SF|6-9|210","20|Alex Sarr|C|7-0|205","18|Kyshawn George|SG|6-8|200","0|Bilal Coulibaly|SF|6-7|195","7|Bub Carrington|PG|6-4|190","8|Deandre Ayton|C|7-0|252","12|Tre Johnson|SG|6-5|190","22|Khris Middleton|SF|6-7|222","9|Justin Champagnie|SF|6-6|206","27|Will Riley|SF|6-9|180","16|Anthony Gill|PF|6-7|230","1|Tre Mann|PG|6-4|178","|Tristan Vukcevic|C|7-0|220","34|Felix Okpara|C|6-11|235|tw","26|Reece Beekman|PG|6-3|190|tw","|Jamir Watkins|SG|6-6|210|tw"]]
+];
+
+const KEY = "nba2k7-2026-done";
+let done = {};
+try { done = JSON.parse(localStorage.getItem(KEY) || "{}") || {}; } catch (e) { done = {}; }
+let hideDone = false;
+try { hideDone = localStorage.getItem(KEY + "-hide") === "1"; } catch (e) {}
+const save = () => { try { localStorage.setItem(KEY, JSON.stringify(done)); } catch (e) {} };
+
+const esc = s => s.replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const teamsEl = document.getElementById("teams");
+
+teamsEl.innerHTML = TEAMS.map(([team, slot, coach, players], ti) => {
+  const sorted = players.map(p => p.split("|")).sort((a, b) => (OVR[b[1]] || 0) - (OVR[a[1]] || 0));
+  const rows = sorted.map(([num, name, pos, ht, wt, flag], pi) => {
+    const id = `t${ti}p${pi}`;
+    const tag = flag === "tw" ? '<span class="tag" title="Two-way contract: skip if you run short on slots">2-WAY</span>'
+              : flag === "keep" ? '<span class="tag keep" title="Already in NBA 2K7: sign or trade him here, no need to create">IN 2K7</span>' : "";
+    return `<tr${pi === 13 ? ' class="cut"' : ""} data-key="${esc(team + "|" + name)}" data-search="${esc((name + " " + team + " " + slot).toLowerCase())}">
+      <td class="num">${esc(num || "–")}</td>
+      <td class="name"><label for="${id}"><input type="checkbox" id="${id}"><span>${esc(name)}</span>${tag}</label></td>
+      <td>${pos}</td><td class="ht">${ht}</td><td class="wt">${wt}</td><td class="ovr">${OVR[name] ?? "–"}</td></tr>`;
+  }).join("");
+  const slotLine = slot === team ? `2K7 slot: ${esc(slot)}` : `2K7 slot: <b>${esc(slot)}</b>`;
+  return `<article class="team" data-search="${esc((team + " " + slot).toLowerCase())}">
+    <div class="team-head"><div class="row"><h3>${esc(team)}</h3><span class="tcount"></span></div><div class="slot">${slotLine}</div></div>
+    <div class="scroll"><table class="roster"><thead><tr><th>#</th><th>Player</th><th>Pos</th><th>Ht</th><th>Lb</th><th class="ovr">OVR</th></tr></thead><tbody>${rows}</tbody></table></div>
+    <div class="coach">Head coach: ${esc(coach)} · ${players.length} listed</div>
+  </article>`;
+}).join("");
+
+const rowsAll = [...teamsEl.querySelectorAll("tr[data-key]")];
+rowsAll.forEach(tr => {
+  const cb = tr.querySelector("input");
+  cb.checked = !!done[tr.dataset.key];
+  tr.classList.toggle("done", cb.checked);
+  cb.addEventListener("change", () => {
+    if (cb.checked) done[tr.dataset.key] = 1; else delete done[tr.dataset.key];
+    tr.classList.toggle("done", cb.checked);
+    save(); refresh();
+  });
+});
+
+const q = document.getElementById("q");
+const hideBtn = document.getElementById("hideDone");
+hideBtn.setAttribute("aria-pressed", String(hideDone));
+
+function refresh() {
+  const term = q.value.trim().toLowerCase();
+  let total = 0, checked = 0, visibleTeams = 0;
+  teamsEl.querySelectorAll(".team").forEach(card => {
+    const rows = [...card.querySelectorAll("tr[data-key]")];
+    const n = rows.filter(r => r.classList.contains("done")).length;
+    total += rows.length; checked += n;
+    card.querySelector(".tcount").textContent = `${n} / ${rows.length}`;
+    const complete = n === rows.length;
+    card.classList.toggle("complete", complete);
+    const teamMatch = !term || card.dataset.search.includes(term);
+    let anyRow = false;
+    rows.forEach(r => {
+      const show = teamMatch || r.dataset.search.includes(term);
+      r.hidden = !show; if (show) anyRow = true;
+    });
+    const visible = anyRow && !(hideDone && complete);
+    card.hidden = !visible; if (visible) visibleTeams++;
+  });
+  document.getElementById("totalCount").textContent = `${checked} / ${total} players entered`;
+  document.getElementById("barFill").style.width = total ? (checked / total * 100) + "%" : "0";
+  document.getElementById("empty").hidden = visibleTeams > 0;
+}
+q.addEventListener("input", refresh);
+hideBtn.addEventListener("click", () => {
+  hideDone = !hideDone;
+  hideBtn.setAttribute("aria-pressed", String(hideDone));
+  try { localStorage.setItem(KEY + "-hide", hideDone ? "1" : "0"); } catch (e) {}
+  refresh();
+});
+refresh();
+</script>

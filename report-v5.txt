@@ -1,0 +1,599 @@
+﻿players loaded: 526
+free agent records: 111
+  kept own 2K7 record: LeBron James -> slot 64
+team players: 380, FA records used for teams: 0, 2026 free agents: 111, dropped: 35
+  dropped: Tre Donaldson (64)
+  dropped: Jahmir Young (64)
+  dropped: Julian Reese (64)
+  dropped: Jaron Pierre Jr. (64)
+  dropped: Malik Dia (64)
+  dropped: Trey Alexander (64)
+  dropped: Jaden Akins (64)
+  dropped: Tyler Nickel (64)
+  dropped: Izaiyah Nelson (64)
+  dropped: Moussa Cissé (64)
+  dropped: Tolu Smith (64)
+  dropped: Brooks Barnhizer (64)
+  dropped: Josh Dix (64)
+  dropped: Drew Timme (64)
+  dropped: Enrique Freeman (64)
+  dropped: Malevy Leons (64)
+  dropped: Reece Beekman (64)
+  dropped: Jamir Watkins (64)
+  dropped: Jayson Kent (63)
+  dropped: Riley Minix (63)
+  dropped: Ernest Udeh Jr. (63)
+  dropped: Sean Pedulla (63)
+  dropped: Chris Mañon (63)
+  dropped: Arthur Kaluma (63)
+  dropped: Lawson Lovering (63)
+  dropped: Alex Morales (63)
+  dropped: Elijah Harkless (63)
+  dropped: Isaac Jones (63)
+  dropped: Ugonna Onyenso (63)
+  dropped: Malachi Smith (63)
+  dropped: Nate Bittle (63)
+  dropped: Zyon Pullin (63)
+  dropped: Rocco Zikarsky (63)
+  dropped: Felix Okpara (63)
+  dropped: Tacko Fall (62)
+string table 0x566C0-0x64100, 3416 reusable texts
+string space: 0 bytes freed, 0 left; 3416 texts reused whole; 7624 bytes of new names appended; block A 0x640C0->0x65EC0, block B now at 0x65EC0-0x6D464
+== T0 Philadelphia 76ers
+  #0   Tyrese Maxey                 pos=PG role=0 74"/200lb proxy=95 target=89 born=1981 yrs=7 slot=0
+  #7   Jaylen Brown                 pos=SF role=2 78"/223lb proxy=93 target=88 born=1977 yrs=11 slot=9
+  #21  Joel Embiid                  pos=C role=4 84"/270lb proxy=89 target=86 born=1977 yrs=11 slot=2
+  #23  LeBron James                 pos=SF role=3 81"/250lb proxy=87 target=85 born=1964 yrs=24 slot=64
+  #77  VJ Edgecombe                 pos=SG role=1 76"/190lb proxy=84 target=82 born=1986 yrs=2 slot=3
+  #5   Anfernee Simons              pos=SG role=5 75"/200lb proxy=79 target=79 born=1979 yrs=9 slot=4
+  #1   Kentavious Caldwell-Pope     pos=SG role=5 77"/204lb proxy=70 target=74 born=1974 yrs=14 slot=6
+  #30  Adem Bona                    pos=C role=5 82"/235lb proxy=64 target=72 born=1985 yrs=3 slot=8
+  #33  Jabari Walker                pos=SF role=5 79"/237lb proxy=64 target=72 born=1983 yrs=5 slot=7
+  #0   Labaron Philon Jr.           pos=PG role=5 76"/177lb proxy=64 target=72 born=1987 yrs=1 slot=5
+  #45  Dean Wade                    pos=PF role=5 81"/228lb proxy=62 target=71 born=1980 yrs=8 slot=10
+  #3   Dominick Barlow              pos=SF role=5 81"/224lb proxy=60 target=70 born=1983 yrs=5 slot=11
+  lineup1: Tyrese Maxey, VJ Edgecombe, Jaylen Brown, LeBron James, Joel Embiid | lineup2: Labaron Philon Jr., Anfernee Simons, Kentavious Caldwell-Pope, Jabari Walker, Adem Bona
+== T1 Portland Blazers
+  #8   Deni Avdija                  pos=SF role=3 80"/228lb proxy=86 target=84 born=1981 yrs=7 slot=12
+  #0   Damian Lillard               pos=PG role=0 74"/200lb proxy=84 target=82 born=1974 yrs=14 slot=13
+  #1   Ja Morant                    pos=PG role=1 74"/174lb proxy=82 target=81 born=1980 yrs=8 slot=14
+  #23  Donovan Clingan              pos=C role=4 86"/280lb proxy=79 target=79 born=1985 yrs=3 slot=15
+  #0   Shaedon Sharpe               pos=SG role=2 77"/210lb proxy=79 target=79 born=1983 yrs=5 slot=16
+  #33  Toumani Camara               pos=PF role=5 79"/230lb proxy=79 target=79 born=1984 yrs=4 slot=17
+  #5   Jrue Holiday                 pos=PG role=5 76"/220lb proxy=77 target=78 born=1970 yrs=18 slot=18
+  #0   Scoot Henderson              pos=PG role=5 75"/207lb proxy=72 target=76 born=1984 yrs=4 slot=19
+  #27  Vit Krejci                   pos=PG role=5 80"/195lb proxy=64 target=72 born=1982 yrs=6 slot=20
+  #35  Robert Williams              pos=C role=5 81"/249lb proxy=62 target=71 born=1979 yrs=9 slot=21
+  #16  Yang Hansen                  pos=C role=5 85"/270lb proxy=60 target=70 born=1986 yrs=2 slot=22
+  #91  Sidy Cissoko                 pos=SF role=5 78"/220lb proxy=59 target=69 born=1984 yrs=4 slot=23
+  lineup1: Damian Lillard, Ja Morant, Shaedon Sharpe, Deni Avdija, Donovan Clingan | lineup2: Jrue Holiday, Scoot Henderson, Vit Krejci, Toumani Camara, Robert Williams
+== T2 Charlotte Hornets
+  #24  Brandon Miller               pos=SF role=2 79"/200lb proxy=86 target=84 born=1984 yrs=4 slot=24
+  #0   Kon Knueppel                 pos=SF role=3 78"/215lb proxy=86 target=84 born=1986 yrs=2 slot=25
+  #0   Naz Reid                     pos=C role=4 81"/264lb proxy=82 target=81 born=1980 yrs=8 slot=26
+  #0   Coby White                   pos=SG role=0 76"/210lb proxy=82 target=81 born=1980 yrs=8 slot=27
+  #8   Grayson Allen                pos=SG role=1 75"/198lb proxy=72 target=76 born=1979 yrs=9 slot=28
+  #17  Dennis Schroder              pos=PG role=5 73"/175lb proxy=72 target=76 born=1974 yrs=14 slot=29
+  #0   Royce O'Neale                pos=SF role=5 78"/226lb proxy=71 target=75 born=1978 yrs=10 slot=30
+  #14  Moussa Diabate               pos=C role=5 82"/210lb proxy=70 target=74 born=1983 yrs=5 slot=31
+  #11  Ryan Kalkbrenner             pos=C role=5 85"/256lb proxy=64 target=72 born=1986 yrs=2 slot=32
+  #5   Christian Anderson Jr.       pos=PG role=5 72"/165lb proxy=64 target=72 born=1987 yrs=1 slot=33
+  #33  Liam McNeeley                pos=SF role=5 79"/210lb proxy=64 target=72 born=1986 yrs=2 slot=34
+  #0   Grant Williams               pos=PF role=5 79"/236lb proxy=64 target=72 born=1980 yrs=8 slot=35
+  lineup1: Coby White, Grayson Allen, Brandon Miller, Kon Knueppel, Naz Reid | lineup2: Dennis Schroder, Christian Anderson Jr., Royce O'Neale, Moussa Diabate, Ryan Kalkbrenner
+== T3 Milwaukee Bucks
+  #11  Tyler Herro                  pos=SG role=1 77"/195lb proxy=87 target=85 born=1980 yrs=8 slot=36
+  #3   Myles Turner                 pos=C role=3 83"/250lb proxy=82 target=81 born=1976 yrs=12 slot=37
+  #9   Kel'el Ware                  pos=C role=4 84"/230lb proxy=79 target=79 born=1985 yrs=3 slot=38
+  #24  Jaime Jaquez Jr.             pos=SF role=2 78"/225lb proxy=74 target=77 born=1984 yrs=4 slot=39
+  #13  Ryan Rollins                 pos=PG role=0 75"/180lb proxy=74 target=77 born=1983 yrs=5 slot=40
+  #18  Kyle Kuzma                   pos=PF role=5 80"/221lb proxy=71 target=75 born=1978 yrs=10 slot=41
+  #5   Gary Trent Jr.               pos=SG role=5 77"/204lb proxy=70 target=74 born=1979 yrs=9 slot=42
+  #15  Nate Ament                   pos=SF role=5 82"/207lb proxy=67 target=73 born=1987 yrs=1 slot=43
+  #20  A.J. Green                   pos=SG role=5 76"/190lb proxy=64 target=72 born=1983 yrs=5 slot=44
+  #0   Brayden Burries              pos=SG role=5 76"/205lb proxy=64 target=72 born=1987 yrs=1 slot=45
+  #0   Caris LeVert                 pos=SG role=5 79"/205lb proxy=64 target=72 born=1977 yrs=11 slot=46
+  #25  Kasparas Jakucionis          pos=SG role=5 77"/200lb proxy=62 target=71 born=1986 yrs=2 slot=47
+  lineup1: Ryan Rollins, Tyler Herro, Jaime Jaquez Jr., Myles Turner, Kel'el Ware | lineup2: Gary Trent Jr., A.J. Green, Brayden Burries, Nate Ament, Kyle Kuzma
+== T4 Chicago Bulls
+  #3   Josh Giddey                  pos=PG role=0 79"/214lb proxy=84 target=82 born=1982 yrs=6 slot=48
+  #24  Norman Powell                pos=SG role=1 75"/215lb proxy=82 target=81 born=1976 yrs=12 slot=49
+  #14  Matas Buzelis                pos=SF role=2 80"/196lb proxy=81 target=80 born=1985 yrs=3 slot=50
+  #8   Caleb Wilson                 pos=PF role=3 82"/215lb proxy=79 target=79 born=1987 yrs=1 slot=51
+  #0   Nic Claxton                  pos=C role=4 83"/215lb proxy=74 target=77 born=1980 yrs=8 slot=52
+  #30  Tre Jones                    pos=PG role=5 73"/190lb proxy=72 target=76 born=1981 yrs=7 slot=53
+  #25  Jalen Smith                  pos=C role=5 80"/244lb proxy=70 target=74 born=1981 yrs=7 slot=54
+  #7   Buddy Hield                  pos=SG role=5 76"/220lb proxy=70 target=74 born=1977 yrs=11 slot=55
+  #35  Isaac Okoro                  pos=SG role=5 76"/225lb proxy=70 target=74 born=1981 yrs=7 slot=56
+  #0   Patrick Williams             pos=PF role=5 78"/235lb proxy=67 target=73 born=1981 yrs=7 slot=57
+  #12  Zach Collins                 pos=PF role=5 81"/240lb proxy=64 target=72 born=1979 yrs=9 slot=58
+  #15  Jordan Hawkins               pos=SG role=5 77"/190lb proxy=62 target=71 born=1984 yrs=4 slot=59
+  #11  Leonard Miller               pos=SF role=5 82"/220lb proxy=60 target=70 born=1984 yrs=4 slot=60
+  #2   Noa Essengue                 pos=PF role=5 80"/194lb proxy=60 target=70 born=1986 yrs=2 slot=61
+  lineup1: Josh Giddey, Norman Powell, Matas Buzelis, Caleb Wilson, Nic Claxton | lineup2: Tre Jones, Buddy Hield, Isaac Okoro, Patrick Williams, Jalen Smith
+== T5 Cleveland Cavaliers
+  #45  Donovan Mitchell             pos=SG role=1 74"/215lb proxy=95 target=89 born=1978 yrs=10 slot=62
+  #4   Evan Mobley                  pos=PF role=3 83"/215lb proxy=93 target=88 born=1982 yrs=6 slot=63
+  #1   James Harden                 pos=PG role=0 77"/220lb proxy=86 target=84 born=1970 yrs=18 slot=74
+  #31  Jarrett Allen                pos=C role=4 81"/243lb proxy=84 target=82 born=1978 yrs=10 slot=65
+  #8   Peyton Watson                pos=SF role=2 80"/200lb proxy=77 target=78 born=1983 yrs=5 slot=66
+  #20  Jaylon Tyson                 pos=SG role=5 78"/215lb proxy=72 target=76 born=1985 yrs=3 slot=67
+  #5   Sam Merrill                  pos=SG role=5 76"/205lb proxy=70 target=74 born=1981 yrs=7 slot=69
+  #33  Mario Hezonja                pos=PF role=5 80"/220lb proxy=64 target=72 born=1982 yrs=6 slot=70
+  #24  Tyrese Proctor               pos=PG role=5 76"/185lb proxy=62 target=71 born=1986 yrs=2 slot=68
+  #9   Craig Porter Jr.             pos=PG role=5 73"/180lb proxy=59 target=69 born=1984 yrs=4 slot=72
+  #15  Meleek Thomas                pos=SG role=5 77"/185lb proxy=59 target=69 born=1987 yrs=1 slot=73
+  #0   Thomas Bryant                pos=C role=5 81"/248lb proxy=59 target=69 born=1978 yrs=10 slot=1
+  #0   Nae'Qwan Tomlin              pos=PF role=5 80"/210lb proxy=57 target=68 born=1985 yrs=3 slot=71
+  lineup1: James Harden, Donovan Mitchell, Peyton Watson, Evan Mobley, Jarrett Allen | lineup2: Tyrese Proctor, Craig Porter Jr., Jaylon Tyson, Sam Merrill, Mario Hezonja
+== T6 Boston Celtics
+  #0   Jayson Tatum                 pos=PF role=2 80"/210lb proxy=97 target=91 born=1978 yrs=10 slot=75
+  #9   Derrick White                pos=SG role=1 76"/190lb proxy=86 target=84 born=1978 yrs=10 slot=76
+  #11  Payton Pritchard             pos=PG role=0 73"/195lb proxy=82 target=81 born=1981 yrs=7 slot=77
+  #13  Paul George                  pos=PF role=3 80"/230lb proxy=79 target=79 born=1971 yrs=17 slot=78
+  #88  Neemias Queta                pos=C role=4 84"/248lb proxy=72 target=76 born=1982 yrs=6 slot=79
+  #4   Mitchell Robinson            pos=C role=5 84"/240lb proxy=72 target=76 born=1979 yrs=9 slot=80
+  #30  Sam Hauser                   pos=PF role=5 79"/217lb proxy=70 target=74 born=1982 yrs=6 slot=81
+  #27  Jordan Walsh                 pos=PF role=5 78"/205lb proxy=64 target=72 born=1984 yrs=4 slot=82
+  #12  Chris Cenac Jr.              pos=PF role=5 83"/240lb proxy=64 target=72 born=1987 yrs=1 slot=83
+  #28  Hugo Gonzalez                pos=SG role=5 78"/200lb proxy=62 target=71 born=1986 yrs=2 slot=84
+  #52  Luka Garza                   pos=C role=5 82"/243lb proxy=60 target=70 born=1982 yrs=6 slot=85
+  #55  Baylor Scheierman            pos=SG role=5 78"/205lb proxy=60 target=70 born=1985 yrs=3 slot=86
+  #45  Mike Conley                  pos=PG role=5 73"/175lb proxy=60 target=70 born=1968 yrs=20 slot=87
+  lineup1: Payton Pritchard, Derrick White, Jayson Tatum, Paul George, Neemias Queta | lineup2: Hugo Gonzalez, Sam Hauser, Jordan Walsh, Chris Cenac Jr., Mitchell Robinson
+== T7 Los Angeles Clippers
+  #10  Darius Garland               pos=PG role=0 73"/192lb proxy=84 target=83 born=1980 yrs=8 slot=88
+  #0   Brandon Ingram               pos=SF role=2 80"/190lb proxy=84 target=83 born=1977 yrs=11 slot=89
+  #28  Rui Hachimura                pos=PF role=4 80"/230lb proxy=74 target=77 born=1980 yrs=8 slot=90
+  #0   Bradley Beal                 pos=SG role=1 76"/207lb proxy=72 target=76 born=1973 yrs=15 slot=91
+  #5   Derrick Jones Jr.            pos=SF role=3 78"/210lb proxy=71 target=75 born=1977 yrs=11 slot=92
+  #0   Max Strus                    pos=SF role=5 77"/215lb proxy=71 target=75 born=1980 yrs=8 slot=93
+  #11  Brook Lopez                  pos=C role=5 85"/282lb proxy=70 target=74 born=1969 yrs=19 slot=94
+  #8   Kris Dunn                    pos=PG role=5 75"/205lb proxy=70 target=74 born=1977 yrs=11 slot=95
+  #9   Gradey Dick                  pos=SG role=5 79"/200lb proxy=70 target=74 born=1984 yrs=4 slot=96
+  #1   Keaton Wagler                pos=SG role=5 78"/175lb proxy=67 target=73 born=1987 yrs=1 slot=97
+  #23  Isaiah Jackson               pos=C role=5 80"/205lb proxy=64 target=72 born=1982 yrs=6 slot=98
+  #4   Kobe Sanders                 pos=SG role=5 80"/207lb proxy=60 target=70 born=1986 yrs=2 slot=99
+  lineup1: Darius Garland, Bradley Beal, Brandon Ingram, Derrick Jones Jr., Rui Hachimura | lineup2: Kris Dunn, Gradey Dick, Keaton Wagler, Max Strus, Brook Lopez
+== T8 Memphis Grizzlies
+  #27  Cameron Boozer               pos=PF role=3 82"/250lb proxy=79 target=79 born=1987 yrs=1 slot=100
+  #14  Zach Edey                    pos=C role=4 87"/305lb proxy=77 target=78 born=1985 yrs=3 slot=101
+  #2   Ty Jerome                    pos=SG role=0 77"/195lb proxy=74 target=77 born=1980 yrs=8 slot=102
+  #23  Cedric Coward                pos=SG role=1 77"/206lb proxy=74 target=77 born=1986 yrs=2 slot=103
+  #0   Jaylen Wells                 pos=SG role=2 79"/206lb proxy=72 target=76 born=1985 yrs=3 slot=104
+  #3   Jerami Grant                 pos=PF role=5 79"/213lb proxy=72 target=76 born=1975 yrs=13 slot=105
+  #28  Isaiah Stewart               pos=C role=5 80"/250lb proxy=72 target=76 born=1981 yrs=7 slot=106
+  #24  Cam Spencer                  pos=SG role=5 75"/205lb proxy=70 target=74 born=1985 yrs=3 slot=107
+  #1   Scotty Pippen Jr.            pos=PG role=5 74"/170lb proxy=70 target=74 born=1983 yrs=5 slot=108
+  #41  Quinten Post                 pos=C role=5 84"/238lb proxy=67 target=73 born=1985 yrs=3 slot=109
+  #45  GG Jackson II                pos=PF role=5 81"/210lb proxy=67 target=73 born=1984 yrs=4 slot=110
+  #22  Taylor Hendricks             pos=PF role=5 81"/215lb proxy=60 target=70 born=1984 yrs=4 slot=111
+  lineup1: Ty Jerome, Cedric Coward, Jaylen Wells, Cameron Boozer, Zach Edey | lineup2: Scotty Pippen Jr., Cam Spencer, Jerami Grant, Isaiah Stewart, Quinten Post
+== T9 Atlanta Hawks
+  #1   Jalen Johnson                pos=SF role=3 80"/219lb proxy=92 target=87 born=1982 yrs=6 slot=112
+  #5   Dyson Daniels                pos=SG role=1 79"/199lb proxy=84 target=83 born=1983 yrs=5 slot=113
+  #7   Nickeil Alexander-Walker     pos=SG role=2 77"/205lb proxy=81 target=80 born=1980 yrs=8 slot=114
+  #17  Onyeka Okongwu               pos=C role=4 82"/240lb proxy=81 target=80 born=1981 yrs=7 slot=115
+  #3   CJ McCollum                  pos=PG role=0 75"/190lb proxy=79 target=79 born=1974 yrs=14 slot=116
+  #0   Luguentz Dort                pos=SF role=5 76"/220lb proxy=74 target=77 born=1980 yrs=8 slot=117
+  #2   Aaron Wiggins                pos=SG role=5 77"/190lb proxy=71 target=75 born=1982 yrs=6 slot=118
+  #4   Kingston Flemings            pos=PG role=5 76"/190lb proxy=71 target=75 born=1987 yrs=1 slot=119
+  #24  Corey Kispert                pos=SF role=5 78"/224lb proxy=70 target=74 born=1982 yrs=6 slot=120
+  #8   Dorian Finney-Smith          pos=PF role=5 79"/220lb proxy=67 target=73 born=1977 yrs=11 slot=121
+  #31  Jock Landale                 pos=C role=5 83"/255lb proxy=64 target=72 born=1982 yrs=6 slot=122
+  #14  Asa Newell                   pos=PF role=5 82"/220lb proxy=64 target=72 born=1986 yrs=2 slot=123
+  lineup1: CJ McCollum, Dyson Daniels, Nickeil Alexander-Walker, Jalen Johnson, Onyeka Okongwu | lineup2: Kingston Flemings, Aaron Wiggins, Luguentz Dort, Corey Kispert, Dorian Finney-Smith
+== T10 Miami Heat
+  #7   Giannis Antetokounmpo        pos=PF role=2 83"/250lb proxy=99 target=95 born=1974 yrs=14 slot=124
+  #13  Bam Adebayo                  pos=C role=4 81"/260lb proxy=89 target=86 born=1978 yrs=10 slot=125
+  #22  Andrew Wiggins               pos=SF role=1 78"/210lb proxy=79 target=79 born=1975 yrs=13 slot=126
+  #2   Davion Mitchell              pos=PG role=0 72"/200lb proxy=74 target=77 born=1982 yrs=6 slot=127
+  #95  Bobby Portis                 pos=PF role=3 81"/250lb proxy=72 target=76 born=1976 yrs=12 slot=128
+  #5   Nikola Jovic                 pos=PF role=5 82"/245lb proxy=72 target=76 born=1983 yrs=5 slot=129
+  #11  Klay Thompson                pos=SF role=5 77"/200lb proxy=71 target=75 born=1974 yrs=14 slot=130
+  #10  Tim Hardaway Jr.             pos=SG role=5 77"/205lb proxy=70 target=74 born=1974 yrs=14 slot=131
+  #9   Pelle Larsson                pos=SG role=5 77"/215lb proxy=67 target=73 born=1985 yrs=3 slot=132
+  #8   Nick Richards                pos=C role=5 83"/255lb proxy=64 target=72 born=1981 yrs=7 slot=133
+  #0   Simone Fontecchio            pos=SF role=5 79"/200lb proxy=62 target=71 born=1983 yrs=5 slot=134
+  #12  Dru Smith                    pos=SG role=5 74"/200lb proxy=59 target=69 born=1983 yrs=5 slot=135
+  #4   Ryan Conwell                 pos=SG role=5 76"/215lb proxy=52 target=66 born=1987 yrs=1 slot=136
+  #15  Myron Gardner                pos=SF role=5 77"/225lb proxy=52 target=66 born=1986 yrs=2 slot=137
+  #0   Keshad Johnson               pos=SF role=5 78"/230lb proxy=52 target=66 born=1985 yrs=3 slot=138
+  lineup1: Davion Mitchell, Andrew Wiggins, Giannis Antetokounmpo, Bobby Portis, Bam Adebayo | lineup2: Tim Hardaway Jr., Pelle Larsson, Klay Thompson, Nikola Jovic, Nick Richards
+== T11 New Orleans Pelicans
+  #1   Zion Williamson              pos=PF role=4 78"/284lb proxy=86 target=84 born=1981 yrs=7 slot=139
+  #25  Trey Murphy III              pos=SF role=1 80"/206lb proxy=84 target=83 born=1982 yrs=6 slot=140
+  #2   Herbert Jones                pos=SF role=2 79"/206lb proxy=79 target=79 born=1982 yrs=6 slot=141
+  #5   Dejounte Murray              pos=PG role=0 76"/180lb proxy=79 target=79 born=1978 yrs=10 slot=142
+  #24  Bennedict Mathurin           pos=SF role=3 77"/210lb proxy=77 target=78 born=1983 yrs=5 slot=143
+  #3   Jordan Poole                 pos=SG role=5 76"/194lb proxy=74 target=77 born=1980 yrs=8 slot=144
+  #22  Derik Queen                  pos=C role=5 81"/250lb proxy=74 target=77 born=1986 yrs=2 slot=145
+  #0   Jeremiah Fears               pos=PG role=5 75"/190lb proxy=72 target=76 born=1986 yrs=2 slot=146
+  #41  Saddiq Bey                   pos=SF role=5 80"/215lb proxy=71 target=75 born=1982 yrs=6 slot=147
+  #21  Yves Missi                   pos=C role=5 83"/235lb proxy=64 target=72 born=1985 yrs=3 slot=148
+  #9   Trendon Watford              pos=PF role=5 80"/244lb proxy=60 target=70 born=1982 yrs=6 slot=149
+  #17  Karlo Matkovic               pos=PF role=5 82"/231lb proxy=59 target=69 born=1985 yrs=3 slot=150
+  lineup1: Dejounte Murray, Trey Murphy III, Herbert Jones, Bennedict Mathurin, Zion Williamson | lineup2: Jeremiah Fears, Jordan Poole, Saddiq Bey, Derik Queen, Yves Missi
+== T12 Utah Jazz
+  #20  Jaren Jackson Jr.            pos=C role=4 82"/242lb proxy=89 target=86 born=1979 yrs=9 slot=151
+  #23  Lauri Markkanen              pos=PF role=3 85"/240lb proxy=87 target=85 born=1978 yrs=10 slot=152
+  #3   Keyonte George               pos=PG role=0 76"/185lb proxy=82 target=81 born=1984 yrs=4 slot=153
+  #22  Darryn Peterson              pos=SG role=1 78"/205lb proxy=81 target=80 born=1987 yrs=1 slot=154
+  #19  Ace Bailey                   pos=SF role=2 81"/200lb proxy=79 target=79 born=1986 yrs=2 slot=155
+  #28  Brice Sensabaugh             pos=SF role=5 78"/225lb proxy=70 target=74 born=1984 yrs=4 slot=156
+  #2   Kyle Filipowski              pos=C role=5 83"/250lb proxy=70 target=74 born=1985 yrs=3 slot=157
+  #8   Isaiah Collier               pos=PG role=5 76"/210lb proxy=67 target=73 born=1985 yrs=3 slot=158
+  #11  Jaxson Hayes                 pos=C role=5 84"/220lb proxy=64 target=72 born=1980 yrs=8 slot=159
+  #0   Jusuf Nurkic                 pos=C role=5 83"/290lb proxy=64 target=72 born=1975 yrs=13 slot=160
+  #10  Svi Mykhailiuk               pos=SF role=5 79"/205lb proxy=62 target=71 born=1979 yrs=9 slot=161
+  #21  Josh Okogie                  pos=SG role=5 76"/213lb proxy=60 target=70 born=1979 yrs=9 slot=162
+  lineup1: Keyonte George, Darryn Peterson, Ace Bailey, Lauri Markkanen, Jaren Jackson Jr. | lineup2: Isaiah Collier, Brice Sensabaugh, Kyle Filipowski, Jaxson Hayes, Jusuf Nurkic
+== T13 Sacramento Kings
+  #11  Domantas Sabonis             pos=C role=4 82"/240lb proxy=86 target=84 born=1977 yrs=11 slot=163
+  #8   Zach LaVine                  pos=SG role=0 77"/200lb proxy=82 target=81 born=1975 yrs=13 slot=164
+  #13  Keegan Murray                pos=PF role=3 80"/225lb proxy=79 target=79 born=1983 yrs=5 slot=165
+  #0   Malik Monk                   pos=SG role=1 75"/200lb proxy=74 target=77 born=1978 yrs=10 slot=166
+  #15  De'Andre Hunter              pos=SF role=2 79"/221lb proxy=72 target=76 born=1980 yrs=8 slot=167
+  #5   Darius Acuff Jr.             pos=PG role=5 74"/190lb proxy=72 target=76 born=1987 yrs=1 slot=168
+  #9   Precious Achiuwa             pos=C role=5 80"/243lb proxy=62 target=71 born=1981 yrs=7 slot=169
+  #10  Nique Clifford               pos=SG role=5 77"/210lb proxy=62 target=71 born=1986 yrs=2 slot=170
+  #6   Maxime Raynaud               pos=C role=5 85"/268lb proxy=62 target=71 born=1986 yrs=2 slot=171
+  #22  Jonathan Mogbo               pos=PF role=5 81"/225lb proxy=57 target=68 born=1985 yrs=3 slot=172
+  #33  Alex Karaban                 pos=SF role=5 80"/220lb proxy=57 target=68 born=1987 yrs=1 slot=173
+  #0   Ben Simmons                  pos=PG role=5 82"/245lb proxy=57 target=68 born=1980 yrs=8 slot=174
+  #34  Emanuel Sharp                pos=SG role=5 75"/212lb proxy=52 target=66 born=1987 yrs=1 slot=175
+  lineup1: Zach LaVine, Malik Monk, De'Andre Hunter, Keegan Murray, Domantas Sabonis | lineup2: Darius Acuff Jr., Nique Clifford, Jonathan Mogbo, Precious Achiuwa, Maxime Raynaud
+== T14 New York Knicks
+  #99   Spiderman                   pos=PG role=0 69"/170lb proxy=99 target=99 born=1985 yrs=3 slot=176
+  #11  Jalen Brunson                pos=PG role=1 74"/190lb proxy=96 target=90 born=1979 yrs=9 slot=177
+  #32  Karl-Anthony Towns           pos=C role=4 84"/248lb proxy=93 target=88 born=1976 yrs=12 slot=178
+  #8   OG Anunoby                   pos=PF role=3 79"/240lb proxy=86 target=84 born=1978 yrs=10 slot=179
+  #25  Mikal Bridges                pos=SF role=2 78"/209lb proxy=84 target=82 born=1979 yrs=9 slot=180
+  #3   Josh Hart                    pos=SG role=5 77"/215lb proxy=81 target=80 born=1978 yrs=10 slot=181
+  #2   Miles McBride                pos=PG role=5 74"/195lb proxy=72 target=76 born=1982 yrs=6 slot=182
+  #0   Jordan Clarkson              pos=SG role=5 77"/194lb proxy=70 target=74 born=1975 yrs=13 slot=183
+  #5   Jose Alvarado                pos=PG role=5 72"/179lb proxy=67 target=73 born=1982 yrs=6 slot=184
+  #44  Landry Shamet                pos=SG role=5 77"/190lb proxy=64 target=72 born=1979 yrs=9 slot=185
+  #0   Andre Drummond               pos=C role=5 83"/279lb proxy=64 target=72 born=1973 yrs=15 slot=186
+  #0   Dalton Knecht                pos=SF role=5 78"/215lb proxy=60 target=70 born=1985 yrs=3 slot=187
+  #13  Tyler Kolek                  pos=PG role=5 74"/195lb proxy=59 target=69 born=1985 yrs=3 slot=188
+  #35  James Wiseman                pos=C role=5 83"/240lb proxy=57 target=68 born=1982 yrs=6 slot=189
+  lineup1:  Spiderman, Jalen Brunson, Mikal Bridges, OG Anunoby, Karl-Anthony Towns | lineup2: Miles McBride, Jose Alvarado, Josh Hart, Jordan Clarkson, Andre Drummond
+== T15 Los Angeles Lakers
+  #77  Luka Doncic                  pos=PG role=0 80"/230lb proxy=99 target=96 born=1979 yrs=9 slot=190
+  #15  Austin Reaves                pos=SG role=1 77"/197lb proxy=87 target=85 born=1982 yrs=6 slot=191
+  #14  Walker Kessler               pos=C role=4 86"/245lb proxy=81 target=80 born=1983 yrs=5 slot=192
+  #5   Quentin Grimes               pos=SG role=2 77"/207lb proxy=74 target=77 born=1982 yrs=6 slot=193
+  #10  Collin Sexton                pos=SG role=3 75"/190lb proxy=72 target=76 born=1979 yrs=9 slot=194
+  #12  Jake LaRavia                 pos=PF role=5 79"/235lb proxy=70 target=74 born=1983 yrs=5 slot=195
+  #11  Ziaire Williams              pos=SF role=5 81"/185lb proxy=67 target=73 born=1982 yrs=6 slot=196
+  #54  Sandro Mamukelashvili        pos=PF role=5 81"/240lb proxy=64 target=72 born=1982 yrs=6 slot=197
+  #4   Matisse Thybulle             pos=SG role=5 77"/202lb proxy=64 target=72 born=1980 yrs=8 slot=198
+  #55  Kevon Looney                 pos=C role=5 81"/222lb proxy=62 target=71 born=1976 yrs=12 slot=199
+  #2   Jarred Vanderbilt            pos=PF role=5 80"/214lb proxy=62 target=71 born=1979 yrs=9 slot=200
+  #7   Jaden Hardy                  pos=SG role=5 75"/198lb proxy=60 target=70 born=1983 yrs=5 slot=201
+  #0   Nick Smith Jr.               pos=SG role=5 74"/185lb proxy=57 target=68 born=1984 yrs=4 slot=202
+  lineup1: Luka Doncic, Austin Reaves, Quentin Grimes, Collin Sexton, Walker Kessler | lineup2: Matisse Thybulle, Ziaire Williams, Jake LaRavia, Sandro Mamukelashvili, Kevon Looney
+== T16 Orlando Magic
+  #5   Paolo Banchero               pos=PF role=3 82"/250lb proxy=93 target=88 born=1983 yrs=5 slot=203
+  #22  Franz Wagner                 pos=SF role=2 82"/220lb proxy=89 target=86 born=1982 yrs=6 slot=204
+  #3   Desmond Bane                 pos=SG role=1 78"/215lb proxy=84 target=83 born=1981 yrs=7 slot=205
+  #4   Jalen Suggs                  pos=PG role=0 77"/205lb proxy=81 target=80 born=1982 yrs=6 slot=206
+  #34  Wendell Carter Jr.           pos=C role=4 82"/270lb proxy=77 target=78 born=1979 yrs=9 slot=207
+  #0   Anthony Black                pos=PG role=5 79"/200lb proxy=74 target=77 born=1984 yrs=4 slot=208
+  #9   Nikola Vucevic               pos=C role=5 81"/265lb proxy=72 target=76 born=1972 yrs=16 slot=209
+  #23  Tristan Da Silva             pos=SF role=5 80"/217lb proxy=70 target=74 born=1985 yrs=3 slot=210
+  #0   Jonathan Isaac               pos=PF role=5 82"/230lb proxy=70 target=74 born=1980 yrs=8 slot=211
+  #35  Goga Bitadze                 pos=C role=5 83"/250lb proxy=67 target=73 born=1980 yrs=8 slot=212
+  #11  Jase Richardson              pos=SG role=5 73"/180lb proxy=62 target=71 born=1986 yrs=2 slot=213
+  #2   Jevon Carter                 pos=PG role=5 72"/190lb proxy=62 target=71 born=1979 yrs=9 slot=214
+  #0   Noah Penda                   pos=SF role=5 79"/215lb proxy=59 target=69 born=1986 yrs=2 slot=215
+  lineup1: Jalen Suggs, Desmond Bane, Franz Wagner, Paolo Banchero, Wendell Carter Jr. | lineup2: Anthony Black, Tristan Da Silva, Jonathan Isaac, Nikola Vucevic, Goga Bitadze
+== T17 Dallas Mavericks
+  #32  Cooper Flagg                 pos=SF role=1 81"/205lb proxy=92 target=87 born=1986 yrs=2 slot=216
+  #11  Kyrie Irving                 pos=SG role=0 74"/195lb proxy=87 target=85 born=1973 yrs=15 slot=217
+  #25  P.J. Washington              pos=PF role=2 79"/230lb proxy=79 target=79 born=1980 yrs=8 slot=218
+  #0   Dereck Lively II             pos=C role=3 85"/230lb proxy=79 target=79 born=1984 yrs=4 slot=219
+  #21  Daniel Gafford               pos=C role=4 82"/265lb proxy=77 target=78 born=1980 yrs=8 slot=220
+  #0   Max Christie                 pos=SG role=5 77"/190lb proxy=74 target=77 born=1983 yrs=5 slot=221
+  #3   Naji Marshall                pos=SF role=5 78"/220lb proxy=74 target=77 born=1981 yrs=7 slot=222
+  #0   Santi Aldama                 pos=PF role=5 84"/215lb proxy=74 target=77 born=1982 yrs=6 slot=223
+  #10  Zaccharie Risacher           pos=SF role=5 80"/200lb proxy=72 target=76 born=1985 yrs=3 slot=224
+  #1   Walter Clayton               pos=PG role=5 76"/195lb proxy=67 target=73 born=1986 yrs=2 slot=225
+  #16  Caleb Martin                 pos=SF role=5 77"/205lb proxy=64 target=72 born=1980 yrs=8 slot=226
+  #14  Morez Johnson Jr.            pos=PF role=5 81"/250lb proxy=62 target=71 born=1987 yrs=1 slot=227
+  #8   Marcus Sasser                pos=PG role=5 73"/195lb proxy=60 target=70 born=1984 yrs=4 slot=228
+  #9   Jett Howard                  pos=SF role=5 80"/215lb proxy=59 target=69 born=1984 yrs=4 slot=229
+  lineup1: Kyrie Irving, Cooper Flagg, P.J. Washington, Dereck Lively II, Daniel Gafford | lineup2: Walter Clayton, Max Christie, Naji Marshall, Zaccharie Risacher, Santi Aldama
+== T18 Brooklyn Nets
+  #17  Michael Porter Jr.           pos=SF role=3 82"/218lb proxy=84 target=82 born=1980 yrs=8 slot=230
+  #30  Julius Randle                pos=PF role=4 81"/250lb proxy=82 target=81 born=1975 yrs=13 slot=231
+  #8   Egor Demin                   pos=PG role=0 80"/200lb proxy=71 target=75 born=1986 yrs=2 slot=232
+  #1   Keon Ellis                   pos=SG role=2 76"/175lb proxy=71 target=75 born=1983 yrs=5 slot=233
+  #0   Mikel Brown Jr.              pos=PG role=1 77"/190lb proxy=71 target=75 born=1987 yrs=1 slot=234
+  #20  Day'Ron Sharpe               pos=C role=5 82"/265lb proxy=70 target=74 born=1982 yrs=6 slot=235
+  #21  Noah Clowney                 pos=PF role=5 82"/210lb proxy=70 target=74 born=1984 yrs=4 slot=236
+  #13  Moritz Wagner                pos=C role=5 83"/245lb proxy=67 target=73 born=1979 yrs=9 slot=237
+  #10  Nolan Traore                 pos=PG role=5 75"/185lb proxy=67 target=73 born=1986 yrs=2 slot=238
+  #2   Danny Wolf                   pos=PF role=5 83"/250lb proxy=64 target=72 born=1986 yrs=2 slot=239
+  #4   Drake Powell                 pos=SG role=5 77"/195lb proxy=64 target=72 born=1986 yrs=2 slot=240
+  #0   Terance Mann                 pos=SG role=5 78"/215lb proxy=64 target=72 born=1980 yrs=8 slot=241
+  #77  Ben Saraf                    pos=SG role=5 78"/200lb proxy=62 target=71 born=1986 yrs=2 slot=242
+  lineup1: Egor Demin, Mikel Brown Jr., Keon Ellis, Michael Porter Jr., Julius Randle | lineup2: Nolan Traore, Noah Clowney, Danny Wolf, Day'Ron Sharpe, Moritz Wagner
+== T19 Denver Nuggets
+  #15  Nikola Jokic                 pos=C role=4 83"/284lb proxy=99 target=98 born=1976 yrs=12 slot=243
+  #27  Jamal Murray                 pos=PG role=0 76"/215lb proxy=92 target=87 born=1978 yrs=10 slot=244
+  #32  Aaron Gordon                 pos=PF role=3 80"/235lb proxy=84 target=82 born=1975 yrs=13 slot=245
+  #0   Christian Braun              pos=SG role=1 78"/220lb proxy=81 target=80 born=1983 yrs=5 slot=246
+  #10  DeMar DeRozan                pos=SF role=2 78"/220lb proxy=79 target=79 born=1970 yrs=18 slot=247
+  #23  Cameron Johnson              pos=PF role=5 80"/210lb proxy=79 target=79 born=1980 yrs=8 slot=248
+  #5   Tyus Jones                   pos=PG role=5 72"/196lb proxy=70 target=74 born=1976 yrs=12 slot=249
+  #0   Cam Whitmore                 pos=SF role=5 78"/230lb proxy=67 target=73 born=1984 yrs=4 slot=250
+  #3   Marvin Bagley III            pos=PF role=5 82"/235lb proxy=64 target=72 born=1979 yrs=9 slot=251
+  #0   Julian Strawther             pos=SG role=5 78"/205lb proxy=64 target=72 born=1984 yrs=4 slot=252
+  #9   Ryan Nembhard                pos=PG role=5 71"/180lb proxy=60 target=70 born=1986 yrs=2 slot=253
+  #14  DaRon Holmes                 pos=PF role=5 81"/225lb proxy=60 target=70 born=1986 yrs=2 slot=254
+  lineup1: Jamal Murray, Christian Braun, DeMar DeRozan, Aaron Gordon, Nikola Jokic | lineup2: Tyus Jones, Julian Strawther, Cam Whitmore, Cameron Johnson, Marvin Bagley III
+== T20 Indiana Pacers
+  #0   Tyrese Haliburton            pos=PG role=0 77"/185lb proxy=93 target=88 born=1982 yrs=6 slot=255
+  #43  Pascal Siakam                pos=PF role=3 80"/245lb proxy=89 target=86 born=1977 yrs=11 slot=256
+  #40  Ivica Zubac                  pos=C role=4 84"/240lb proxy=84 target=82 born=1977 yrs=11 slot=257
+  #2   Andrew Nembhard              pos=SG role=1 76"/191lb proxy=79 target=79 born=1983 yrs=5 slot=258
+  #23  Aaron Nesmith                pos=SF role=2 77"/215lb proxy=74 target=77 born=1981 yrs=7 slot=259
+  #5   Jarace Walker                pos=PF role=5 79"/235lb proxy=72 target=76 born=1984 yrs=4 slot=260
+  #0   T.J. McConnell               pos=PG role=5 73"/190lb proxy=72 target=76 born=1976 yrs=12 slot=261
+  #1   Obi Toppin                   pos=PF role=5 81"/220lb proxy=71 target=75 born=1981 yrs=7 slot=262
+  #10  Kelly Oubre Jr.              pos=SF role=5 80"/210lb proxy=71 target=75 born=1976 yrs=12 slot=263
+  #32  Jay Huff                     pos=C role=5 85"/240lb proxy=67 target=73 born=1982 yrs=6 slot=264
+  #22  Larry Nance Jr.              pos=PF role=5 78"/245lb proxy=62 target=71 born=1976 yrs=12 slot=265
+  #29  Quenton Jackson              pos=PG role=5 76"/173lb proxy=60 target=70 born=1983 yrs=5 slot=266
+  lineup1: Tyrese Haliburton, Andrew Nembhard, Aaron Nesmith, Pascal Siakam, Ivica Zubac | lineup2: T.J. McConnell, Kelly Oubre Jr., Jarace Walker, Obi Toppin, Jay Huff
+== T21 Detroit Pistons
+  #2   Cade Cunningham              pos=PG role=0 78"/220lb proxy=99 target=92 born=1982 yrs=6 slot=267
+  #0   Jalen Duren                  pos=C role=4 82"/250lb proxy=86 target=84 born=1983 yrs=5 slot=268
+  #9   Ausar Thompson               pos=SF role=1 79"/205lb proxy=82 target=81 born=1984 yrs=4 slot=269
+  #20  John Collins                 pos=PF role=3 81"/226lb proxy=77 target=78 born=1978 yrs=10 slot=270
+  #55  Duncan Robinson              pos=SF role=2 79"/215lb proxy=71 target=75 born=1979 yrs=9 slot=271
+  #17  Isaiah Joe                   pos=SG role=5 76"/165lb proxy=71 target=75 born=1981 yrs=7 slot=272
+  #27  Kevin Huerter                pos=SG role=5 78"/190lb proxy=70 target=74 born=1979 yrs=9 slot=273
+  #5   Ron Holland                  pos=SF role=5 80"/206lb proxy=70 target=74 born=1985 yrs=3 slot=274
+  #7   Paul Reed                    pos=C role=5 81"/210lb proxy=67 target=73 born=1981 yrs=7 slot=275
+  #12  Taurean Prince               pos=SF role=5 78"/218lb proxy=64 target=72 born=1977 yrs=11 slot=276
+  #24  Daniss Jenkins               pos=PG role=5 76"/165lb proxy=60 target=70 born=1985 yrs=3 slot=277
+  #31  Javonte Green                pos=SG role=5 77"/205lb proxy=60 target=70 born=1980 yrs=8 slot=278
+  lineup1: Cade Cunningham, Ausar Thompson, Duncan Robinson, John Collins, Jalen Duren | lineup2: Isaiah Joe, Kevin Huerter, Ron Holland, Taurean Prince, Paul Reed
+== T22 Toronto Raptors
+  #4   Scottie Barnes               pos=PF role=3 80"/237lb proxy=92 target=87 born=1982 yrs=6 slot=279
+  #2   Kawhi Leonard                pos=SF role=1 78"/225lb proxy=89 target=86 born=1973 yrs=15 slot=280
+  #9   RJ Barrett                   pos=SF role=2 78"/214lb proxy=82 target=81 born=1980 yrs=8 slot=281
+  #5   Immanuel Quickley            pos=PG role=0 74"/190lb proxy=81 target=80 born=1981 yrs=7 slot=282
+  #19  Jakob Poeltl                 pos=C role=4 84"/253lb proxy=81 target=80 born=1977 yrs=11 slot=283
+  #30  Collin Murray-Boyles         pos=PF role=5 79"/245lb proxy=74 target=77 born=1986 yrs=2 slot=284
+  #14  Ja'Kobe Walter               pos=SG role=5 76"/180lb proxy=70 target=74 born=1985 yrs=3 slot=285
+  #1   Jamal Shead                  pos=PG role=5 73"/200lb proxy=67 target=73 born=1985 yrs=3 slot=286
+  #32  Trayce Jackson-Davis         pos=C role=5 81"/245lb proxy=67 target=73 born=1984 yrs=4 slot=287
+  #77  Jamison Battle               pos=SF role=5 79"/220lb proxy=60 target=70 born=1985 yrs=3 slot=288
+  #13  Kyle Anderson                pos=SF role=5 80"/230lb proxy=59 target=69 born=1975 yrs=13 slot=289
+  #22  Allen Graves                 pos=PF role=5 81"/225lb proxy=55 target=67 born=1987 yrs=1 slot=290
+  lineup1: Immanuel Quickley, Kawhi Leonard, RJ Barrett, Scottie Barnes, Jakob Poeltl | lineup2: Jamal Shead, Ja'Kobe Walter, Jamison Battle, Collin Murray-Boyles, Trayce Jackson-Davis
+== T23 Houston Rockets
+  #7   Kevin Durant                 pos=PF role=2 83"/240lb proxy=95 target=89 born=1969 yrs=19 slot=291
+  #28  Alperen Sengun               pos=C role=4 83"/243lb proxy=92 target=87 born=1982 yrs=6 slot=292
+  #1   Amen Thompson                pos=SF role=1 79"/200lb proxy=89 target=86 born=1984 yrs=4 slot=293
+  #10  Jabari Smith Jr.             pos=PF role=3 83"/220lb proxy=82 target=81 born=1983 yrs=5 slot=294
+  #5   Fred VanVleet                pos=PG role=0 72"/197lb proxy=79 target=79 born=1978 yrs=10 slot=295
+  #17  Tari Eason                   pos=PF role=5 80"/215lb proxy=77 target=78 born=1983 yrs=5 slot=296
+  #15  Reed Sheppard                pos=PG role=5 74"/185lb proxy=74 target=77 born=1985 yrs=3 slot=297
+  #12  Steven Adams                 pos=C role=5 83"/265lb proxy=71 target=75 born=1975 yrs=13 slot=298
+  #36  Marcus Smart                 pos=PG role=5 75"/220lb proxy=70 target=74 born=1975 yrs=13 slot=299
+  #31  Bogdan Bogdanovic            pos=SG role=5 77"/225lb proxy=67 target=73 born=1978 yrs=10 slot=300
+  #30  Clint Capela                 pos=C role=5 82"/256lb proxy=67 target=73 born=1975 yrs=13 slot=301
+  #8   Jae'Sean Tate                pos=SF role=5 76"/230lb proxy=60 target=70 born=1981 yrs=7 slot=302
+  lineup1: Fred VanVleet, Amen Thompson, Kevin Durant, Jabari Smith Jr., Alperen Sengun | lineup2: Reed Sheppard, Marcus Smart, Bogdan Bogdanovic, Tari Eason, Steven Adams
+== T24 Oklahoma City Thunder
+  #2   Shai Gilgeous-Alexander      pos=PG role=0 78"/195lb proxy=99 target=97 born=1979 yrs=9 slot=303
+  #8   Jalen Williams               pos=SG role=1 77"/211lb proxy=93 target=88 born=1983 yrs=5 slot=304
+  #7   Chet Holmgren                pos=C role=3 85"/208lb proxy=92 target=87 born=1984 yrs=4 slot=305
+  #55  Isaiah Hartenstein           pos=C role=4 84"/250lb proxy=82 target=81 born=1979 yrs=9 slot=306
+  #25  Ajay Mitchell                pos=SG role=2 76"/190lb proxy=79 target=79 born=1985 yrs=3 slot=307
+  #22  Cason Wallace                pos=SG role=5 75"/195lb proxy=77 target=78 born=1984 yrs=4 slot=308
+  #9   Alex Caruso                  pos=SG role=5 77"/186lb proxy=74 target=77 born=1978 yrs=10 slot=309
+  #3   Jared McCain                 pos=SG role=5 75"/195lb proxy=72 target=76 born=1985 yrs=3 slot=310
+  #6   Jaylin Williams              pos=PF role=5 81"/240lb proxy=67 target=73 born=1983 yrs=5 slot=311
+  #15  Aday Mara                    pos=C role=5 86"/255lb proxy=64 target=72 born=1987 yrs=1 slot=312
+  #34  Kenrich Williams             pos=PF role=5 79"/210lb proxy=60 target=70 born=1979 yrs=9 slot=313
+  #14  Bennett Stirtz               pos=PG role=5 76"/180lb proxy=60 target=70 born=1987 yrs=1 slot=314
+  lineup1: Shai Gilgeous-Alexander, Jalen Williams, Ajay Mitchell, Chet Holmgren, Isaiah Hartenstein | lineup2: Cason Wallace, Alex Caruso, Jared McCain, Jaylin Williams, Aday Mara
+== T25 San Antonio Spurs
+  #1   Victor Wembanyama            pos=C role=4 88"/235lb proxy=99 target=96 born=1984 yrs=4 slot=315
+  #4   De'Aaron Fox                 pos=PG role=0 75"/185lb proxy=87 target=85 born=1978 yrs=10 slot=316
+  #5   Stephon Castle               pos=PG role=1 78"/215lb proxy=86 target=84 born=1985 yrs=3 slot=317
+  #2   Dylan Harper                 pos=SG role=2 77"/215lb proxy=82 target=81 born=1986 yrs=2 slot=318
+  #24  Devin Vassell                pos=SG role=3 77"/200lb proxy=79 target=79 born=1981 yrs=7 slot=319
+  #3   Keldon Johnson               pos=SF role=5 78"/220lb proxy=74 target=77 born=1980 yrs=8 slot=320
+  #30  Julian Champagnie            pos=SF role=5 79"/217lb proxy=72 target=76 born=1983 yrs=5 slot=321
+  #40  Harrison Barnes              pos=PF role=5 79"/225lb proxy=70 target=74 born=1973 yrs=15 slot=322
+  #7   Luke Kornet                  pos=C role=5 85"/250lb proxy=70 target=74 born=1978 yrs=10 slot=323
+  #0   Tobias Harris                pos=PF role=5 80"/226lb proxy=70 target=74 born=1972 yrs=16 slot=324
+  #11  Carter Bryant                pos=PF role=5 78"/220lb proxy=67 target=73 born=1986 yrs=2 slot=325
+  #0   Jayden Quaintance            pos=PF role=5 82"/255lb proxy=60 target=70 born=1987 yrs=1 slot=326
+  lineup1: De'Aaron Fox, Stephon Castle, Dylan Harper, Devin Vassell, Victor Wembanyama | lineup2: Keldon Johnson, Julian Champagnie, Harrison Barnes, Tobias Harris, Luke Kornet
+== T26 Phoenix Suns
+  #15  Devin Booker                 pos=SG role=0 77"/206lb proxy=95 target=89 born=1976 yrs=12 slot=327
+  #4   Jalen Green                  pos=SG role=1 76"/186lb proxy=82 target=81 born=1982 yrs=6 slot=328
+  #0   Mark Williams                pos=C role=4 85"/240lb proxy=79 target=79 born=1983 yrs=5 slot=329
+  #3   Dillon Brooks                pos=SF role=2 79"/225lb proxy=77 target=78 born=1978 yrs=10 slot=330
+  #22  Miles Bridges                pos=SF role=3 79"/225lb proxy=77 target=78 born=1980 yrs=8 slot=331
+  #12  Collin Gillespie             pos=PG role=5 73"/195lb proxy=70 target=74 born=1984 yrs=4 slot=332
+  #10  Khaman Maluach               pos=C role=5 85"/250lb proxy=67 target=73 born=1986 yrs=2 slot=333
+  #23  Jordan Goodwin               pos=PG role=5 75"/215lb proxy=67 target=73 born=1982 yrs=6 slot=334
+  #0   Ryan Dunn                    pos=SF role=5 79"/216lb proxy=67 target=73 born=1985 yrs=3 slot=335
+  #8   Luke Kennard                 pos=SG role=5 77"/206lb proxy=67 target=73 born=1978 yrs=10 slot=336
+  #18  Koa Peat                     pos=PF role=5 80"/235lb proxy=64 target=72 born=1987 yrs=1 slot=337
+  #11  Oso Ighodaro                 pos=PF role=5 83"/235lb proxy=60 target=70 born=1985 yrs=3 slot=338
+  #20  Rasheer Fleming              pos=PF role=5 81"/240lb proxy=59 target=69 born=1986 yrs=2 slot=339
+  #17  Jamaree Bouyea               pos=PG role=5 74"/180lb proxy=55 target=67 born=1983 yrs=5 slot=340
+  lineup1: Devin Booker, Jalen Green, Dillon Brooks, Miles Bridges, Mark Williams | lineup2: Collin Gillespie, Jordan Goodwin, Luke Kennard, Ryan Dunn, Khaman Maluach
+== T27 Minnesota T'Wolves
+  #5   Anthony Edwards              pos=SG role=1 76"/225lb proxy=99 target=92 born=1981 yrs=7 slot=341
+  #1   LaMelo Ball                  pos=PG role=0 79"/180lb proxy=87 target=85 born=1981 yrs=7 slot=342
+  #27  Rudy Gobert                  pos=C role=4 85"/258lb proxy=84 target=82 born=1974 yrs=14 slot=343
+  #3   Jaden McDaniels              pos=PF role=2 81"/185lb proxy=81 target=80 born=1981 yrs=7 slot=344
+  #24  Jonathan Kuminga             pos=PF role=3 79"/225lb proxy=79 target=79 born=1982 yrs=6 slot=345
+  #13  Ayo Dosunmu                  pos=SG role=5 76"/201lb proxy=74 target=77 born=1982 yrs=6 slot=346
+  #0   Donte DiVincenzo             pos=SG role=5 76"/203lb proxy=74 target=77 born=1979 yrs=9 slot=347
+  #4   Terrence Shannon Jr.         pos=SG role=5 78"/215lb proxy=64 target=72 born=1985 yrs=3 slot=348
+  #41  Trey Lyles                   pos=PF role=5 81"/234lb proxy=62 target=71 born=1977 yrs=11 slot=349
+  #8   Bones Hyland                 pos=PG role=5 74"/169lb proxy=62 target=71 born=1982 yrs=6 slot=350
+  #19  Joan Beringer                pos=PF role=5 83"/230lb proxy=60 target=70 born=1986 yrs=2 slot=351
+  #7   Jaylen Clark                 pos=SG role=5 77"/205lb proxy=60 target=70 born=1985 yrs=3 slot=352
+  lineup1: LaMelo Ball, Anthony Edwards, Jaden McDaniels, Jonathan Kuminga, Rudy Gobert | lineup2: Bones Hyland, Ayo Dosunmu, Donte DiVincenzo, Terrence Shannon Jr., Trey Lyles
+== T28 Golden State Warriors
+  #30  Stephen Curry                pos=PG role=0 74"/200lb proxy=96 target=90 born=1970 yrs=18 slot=353
+  #10  Jimmy Butler                 pos=SF role=2 78"/230lb proxy=84 target=82 born=1972 yrs=16 slot=354
+  #0   Kristaps Porzingis           pos=C role=4 86"/240lb proxy=81 target=80 born=1976 yrs=12 slot=355
+  #23  Draymond Green               pos=PF role=3 78"/235lb proxy=79 target=79 born=1973 yrs=15 slot=356
+  #2   Brandin Podziemski           pos=SG role=1 76"/205lb proxy=79 target=79 born=1984 yrs=4 slot=357
+  #0   Moses Moody                  pos=SG role=5 77"/215lb proxy=72 target=76 born=1982 yrs=6 slot=358
+  #20  Al Horford                   pos=C role=5 80"/258lb proxy=70 target=74 born=1968 yrs=20 slot=359
+  #8   De'Anthony Melton            pos=PG role=5 74"/201lb proxy=70 target=74 born=1979 yrs=9 slot=360
+  #1   Yaxel Lendeborg              pos=SF role=5 81"/241lb proxy=67 target=73 born=1987 yrs=1 slot=361
+  #12  Brandon Williams             pos=PG role=5 73"/190lb proxy=64 target=72 born=1983 yrs=5 slot=362
+  #15  Gui Santos                   pos=PF role=5 79"/218lb proxy=64 target=72 born=1984 yrs=4 slot=363
+  #32  Georges Niang                pos=PF role=5 78"/230lb proxy=62 target=71 born=1978 yrs=10 slot=364
+  #0   Gary Payton II               pos=SG role=5 74"/195lb proxy=62 target=71 born=1977 yrs=11 slot=365
+  #3   Will Richard                 pos=SG role=5 75"/210lb proxy=62 target=71 born=1986 yrs=2 slot=366
+  lineup1: Stephen Curry, Brandin Podziemski, Jimmy Butler, Draymond Green, Kristaps Porzingis | lineup2: De'Anthony Melton, Brandon Williams, Moses Moody, Yaxel Lendeborg, Al Horford
+== T29 Washington Wizards
+  #23  Anthony Davis                pos=PF role=2 82"/253lb proxy=92 target=87 born=1973 yrs=15 slot=367
+  #3   Trae Young                   pos=PG role=0 74"/164lb proxy=87 target=85 born=1979 yrs=9 slot=368
+  #4   AJ Dybantsa                  pos=SF role=1 81"/210lb proxy=81 target=80 born=1987 yrs=1 slot=369
+  #20  Alex Sarr                    pos=C role=3 84"/205lb proxy=79 target=79 born=1985 yrs=3 slot=370
+  #8   Deandre Ayton                pos=C role=4 84"/252lb proxy=77 target=78 born=1979 yrs=9 slot=371
+  #0   Bilal Coulibaly              pos=SF role=5 79"/195lb proxy=74 target=77 born=1984 yrs=4 slot=372
+  #18  Kyshawn George               pos=SG role=5 80"/200lb proxy=72 target=76 born=1985 yrs=3 slot=373
+  #12  Tre Johnson                  pos=SG role=5 77"/190lb proxy=71 target=75 born=1986 yrs=2 slot=374
+  #7   Bub Carrington               pos=PG role=5 76"/190lb proxy=70 target=74 born=1985 yrs=3 slot=375
+  #22  Khris Middleton              pos=SF role=5 79"/222lb proxy=64 target=72 born=1973 yrs=15 slot=376
+  #9   Justin Champagnie            pos=SF role=5 78"/206lb proxy=64 target=72 born=1982 yrs=6 slot=377
+  #27  Will Riley                   pos=SF role=5 81"/180lb proxy=62 target=71 born=1986 yrs=2 slot=378
+  #1   Tre Mann                     pos=PG role=5 76"/178lb proxy=60 target=70 born=1982 yrs=6 slot=379
+  lineup1: Trae Young, AJ Dybantsa, Anthony Davis, Alex Sarr, Deandre Ayton | lineup2: Bub Carrington, Kyshawn George, Tre Johnson, Bilal Coulibaly, Khris Middleton
+== T30 East All-Stars East
+  lineup1:  Spiderman, Cade Cunningham, Jalen Brunson, Giannis Antetokounmpo, Jayson Tatum | lineup2: Tyrese Maxey, Donovan Mitchell, Jaylen Brown, Evan Mobley, Karl-Anthony Towns
+== T31 West All-Stars West
+  lineup1: Shai Gilgeous-Alexander, Luka Doncic, Anthony Edwards, Nikola Jokic, Victor Wembanyama | lineup2: Stephen Curry, Devin Booker, Jalen Williams, Cooper Flagg, Kevin Durant
+== free agents
+  Sion James 71
+  Tidjane Salaun 70
+  Hannes Steinbach 70
+  Nicolas Batum 70
+  Karim Lopez 70
+  Zuby Ejiofor 70
+  Josh Green 70
+  Josh Minott 70
+  Zeke Nnaji 70
+  Spencer Jones 70
+  Ben Sheppard 70
+  Nikola Topic 70
+  Justin Edwards 69
+  Jericho Sims 69
+  Dailyn Swain 69
+  Cam Christie 69
+  Kris Murray 69
+  Olivier-Maxence Prosper 69
+  Julian Phillips 69
+  Thomas Sorber 69
+  Cody Williams 69
+  Caleb Love 68
+  Rayan Rupert 68
+  Ousmane Dieng 68
+  Kam Jones 68
+  Jordan Miller 68
+  Javon Small 68
+  Mouhamed Gueye 68
+  Pacome Dadiet 68
+  Jamal Cain 68
+  Sergio de Larrea 68
+  Joshua Jefferson 68
+  Trevon Brazile 68
+  Braden Smith 68
+  Johnny Furphy 68
+  Ebuka Okorie 68
+  Tarris Reed Jr. 68
+  Isaiah Evans 68
+  PJ Hall 67
+  Tobe Awaka 67
+  Devin Carter 67
+  Jalen Pickett 67
+  Yanic Konan Niederhauser 67
+  Jalen Wilson 67
+  Henri Veesaar 67
+  Bryce McGowens 67
+  Mo Bamba 67
+  Tony Bradley 67
+  Kobe Bufkin 67
+  Mohamed Diawara 67
+  Jalen Slawson 67
+  Kobe Brown 67
+  Chaz Lanier 67
+  Alijah Martin 67
+  Bruce Thornton 67
+  Ja'Kobi Gillespie 67
+  Charles Bassey 67
+  Tristan Vukcevic 67
+  Micah Potter 66
+  John Tonje 66
+  Michael Ajayi 66
+  Bogoljub Markovic 66
+  Jaylin Sellers 66
+  Ron Harper Jr. 66
+  Dillon Mitchell 66
+  Baba Miller 66
+  RayJ Dennis 66
+  DeAndre Jordan 66
+  AJ Johnson 66
+  Harrison Ingram 66
+  Daeqwon Plowden 66
+  Leaky Black 66
+  Killian Hayes 66
+  Bronny James 66
+  Cameron Carr 66
+  Adou Thiero 66
+  Tobi Lawal 66
+  Tarik Biberovic 66
+  Chaney Johnson 66
+  Tyler Bilodeau 66
+  Grant Nelson 66
+  Bryce Hopkins 66
+  Jaden Bradley 66
+  Isaiah Crawford 66
+  Oscar Tshiebwe 66
+  Jordan McLaughlin 66
+  Duop Reath 66
+  Graham Ike 66
+  Anthony Gill 66
+  Ariel Hukporti 65
+  Branden Carlson 65
+  Kylan Boswell 65
+  Khalifa Diop 65
+  Amari Williams 65
+  Nick Martinelli 65
+  Jahmai Mashack 65
+  Keshon Gilbert 65
+  Vladislav Goldin 65
+  Colin Castleton 65
+  Alpha Diallo 65
+  Quadir Copeland 65
+  Micah Peavy 65
+  David Jones Garcia 65
+  Maliq Brown 65
+  Pat Spencer 65
+  LJ Cryer 65
+  Chris Youngblood 64
+  Cormac Ryan 64
+  Pete Nance 64
+  Tristan Enaruna 64
+  Carson Cooper 64
+legend check: Allen Iverson, Larry Bird, created slot: 12**************** 11****************
+ERRORS: 0
